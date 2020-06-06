@@ -1,0 +1,1262 @@
+* {
+    box-sizing: border-box;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+@import url(//db.onlinewebfonts.com/c/331ec49c0d78e469c42c1d814dd45838?family=Avenir+Book);
+@import url(//db.onlinewebfonts.com/c/901497541657a2f24e42848bcf7fad52?family=Avenir+Heavy);
+
+@font-face {
+    font-family: 'DayPosterBlackNF';
+    src:  url('styles/DayPosterBlackNF.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: "FuturaCM";
+    src: url("../fonts/Futura.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SofiaRegular";
+    src: url("../fonts/SofiaProRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SketchOpen";
+    src: url("../fonts/KGSecondChancesSketch.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Sketch";
+    src: url("../fonts/KGSecondChancesSolid.ttf") format("truetype");
+}
+
+h1, h2 {
+  letter-spacing: 0.1em;
+  color: black;
+  font-family: "Avenir heavy", Helvetica;
+  font-size: 1.6em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Avenir", Helvetica;
+  margin: 0;
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+  color: #7CCEB3;
+}
+
+.mijnwerk article {
+  width: 35vw;
+  height: 70vh;
+  border: 1em solid white;
+  flex-shrink: 0;
+}
+
+.imgbox {
+  background-image: url(../images/BackgroundCanvas.png);
+  background-size: 120%;
+  background-color: #cccccc;
+  height: 100%;
+}
+
+.imgdiv {
+	/* overflow: hidden; */
+  object-fit: cover;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+  border: 1em solid white;
+  transition: transform 500ms ease;
+}
+
+.imgdiv img, .imgdiv video {
+	width: 100%;
+  height: 100%;
+  object-fit: cover;
+	transition: transform 500ms ease;
+}
+
+/* .imgdiv img:hover {
+  transform: scale(1.1);
+} */
+
+/* #realcontent {
+  position: fixed;
+  width: 500vw;
+  height: 100vh;
+  display: flex;
+}
+
+#fakecontent {
+  height: 340vw;
+} */
+
+body,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    /* background-color: white; */
+    width: 100vw;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    background-color: rgba(255,255,255,0.5);
+    width: 7em;
+    mix-blend-mode: darken;
+}
+
+nav a {
+    font-family: "SofiaRegular";
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+}
+
+.portfoliodiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* h1 {
+  z-index: -2;
+  margin-left: -1.9vw !important;
+  font-size: 13vh;
+  writing-mode: vertical-rl;
+  margin: 0;
+  transform: scaleX(-1) scaleY(-1);
+  letter-spacing: 0.1em;
+  font-family: "Avenir heavy", Helvetica;
+  color: #7CCEB3;
+} */
+
+.test {
+  width: 70vw;
+  /* background-color: rgba(0,0,0,0.2); */
+  height: 100vh;
+  display: flex;
+}
+
+.background {
+  background-image: -webkit-linear-gradient(350deg, #7CCEB3 80%, rgba(0, 0, 0, 0) 0%);
+  background-color: white;
+  height: 100vh;
+}
+
+.background > div {
+  width: 40vw;
+  position: absolute;
+  top: 11vh;
+  left: 5vw;
+}
+
+.background > div div {
+  width: 20vw;
+  margin-top: 6vh;
+}
+
+.background > div div p {
+  margin-bottom: 4vh;
+  color: #696969;
+  color: white;
+}
+
+.meerweten {
+  margin-top: 6vh;
+}
+
+.background a {
+  position: relative;
+  z-index: 2;
+  padding: 1em 2em;
+  background-color: #7CCEB3;
+  color: black;
+  font-family: "Avenir", Helvetica;
+  color: white;
+  text-transform: uppercase;
+  border: 2.5px solid white;
+  transition: all 0.4s ease 0s;
+}
+
+.background a:hover  {
+  color: #7CCEB3 !important;
+  background: white;
+  border-color: white !important;
+  transition: all 0.4s ease 0s;
+}
+
+.background h2 {
+  color: white;
+  letter-spacing: normal;
+  text-transform: none;
+  top: 20vh;
+  font-size: 3em;
+}
+
+.kim {
+  height: 100vh;
+  left: 0;
+  width: 50vw;
+  bottom: 0;
+  object-fit: cover;
+}
+
+.kimgarrard {
+  position: absolute;
+  z-index: 0;
+}
+
+.mijnwerk {
+  display: flex;
+  /* overflow-x: auto; */
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+
+.mijnwerk .imgdiv {
+	border-bottom: 8em solid white;
+}
+
+.mijnwerk article {
+  width: 35vw;
+  height: 70vh;
+  border: 1em solid white;
+  flex-shrink: 0;
+}
+
+.imgbox {
+  background-image: url(../images/BackgroundCanvas.png);
+  background-size: 120%;
+  background-color: #cccccc;
+  height: 100%;
+}
+
+.imgbox > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.imgbox > a img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.img2 {
+  object-fit: cover !important;
+}
+
+.mijnwerk a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.mijnwerk section {
+  /* margin-top: -10vh; */
+  /* position: absolute; */
+  z-index: 2;
+  /* background-image: -webkit-linear-gradient(93deg, white 60%, rgba(0, 0, 0, 0) 0%); */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); */
+}
+
+.mijnwerk h2 {
+  letter-spacing: 0.1em;
+  color: black;
+  font-family: "Avenir medium", Helvetica;
+  font-size: 1.6em;
+  margin: 0;
+  padding-top: 4vh;
+  transition: 0.3s;
+}
+
+.overmijleft {
+  width: 60vw !important;
+}
+
+.overmij {
+  width: 50vw;
+}
+
+.overmij p {
+  margin-top: 3vh;
+}
+
+.overmijp {
+  margin-bottom: 6vh;
+}
+
+.overmijp2 {
+  margin-bottom: 3vh;
+  font-size: 1.2em;
+}
+
+.mail {
+  margin-top: 5vh;
+  padding: 1em 2em;
+  background-color: white;
+  color: #7CCEB3;
+  font-family: "Avenir", Helvetica;
+  /* color: white; */
+  text-transform: uppercase;
+  border: 2.5px solid #7CCEB3;
+  transition: all 0.4s ease 0s;
+}
+
+.mail:hover  {
+  color: #ffffff !important;
+  background: #7CCEB3;
+  border-color: #7CCEB3 !important;
+  transition: all 0.4s ease 0s;
+}
+
+.call {
+  margin-left: 1vh;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DETAILPAGINA */
+
+.maindetail {
+  background-image: -webkit-linear-gradient(95deg, white 86%, rgba(0, 0, 0, 0) 0%);
+  background-size: 120%;
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  margin-top: 28vh;
+  padding-top: 40vh;
+}
+
+.maindetail > div {
+  margin-top: 12vh;
+}
+
+.maindetail > div:last-of-type{
+  margin-bottom: 20vh;
+}
+
+.maindetail > div article p {
+  margin-top: 2vh;
+}
+
+.projectinfo {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectinfo div {
+  width: 40%;
+}
+
+.projectinfo div p:nth-of-type(1) {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #7CCEB3;
+}
+
+.introdiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.introdiv h2 {
+  font-size: 2em;
+}
+
+.introdiv article:nth-of-type(1) {
+  width: 30%;
+}
+
+.introdiv article:nth-of-type(2) {
+  width: 60%;
+}
+
+.introdiv article:nth-of-type(2) p {
+  margin-bottom: 4vh;
+}
+
+.button {
+  background-color: #7CCEB3;
+  padding: 1em 1.5em;
+  background-color: white;
+  color: #7CCEB3;
+  text-decoration: none;
+  font-family: "Avenir", Helvetica;
+  text-transform: uppercase;
+  border: 0.2em solid #7CCEB3;
+  transition: all 0.4s ease 0s;
+}
+
+.button:hover {
+  color: #ffffff !important;
+  background: #7CCEB3;
+  border-color: #7CCEB3 !important;
+  transition: all 0.4s ease 0s;
+}
+
+.imgandtext {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgandtext div:nth-of-type(1) {
+  width: 50%;
+  height: 50vh;
+}
+
+.imgandtext img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imgandtext article {
+  width: 40%;
+}
+
+.imgrow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vh;
+}
+
+.imgrow .imgdiv {
+  width: 32%;
+  border: 0.5em solid white;
+  height: 30vh;
+}
+
+.videodiv {
+  height: 46vh !important;
+}
+
+#dinner .maindetail {
+  margin-top: 24vh;
+  padding-top: 45vh;
+  height: auto;
+}
+
+#dinner .firstfotodiv {
+  background: url(../images/dinner2.jpg) no-repeat center 90%;
+  height: 75vh;
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  z-index: -2;
+  background-size: cover;
+}
+
+#enjoin .maindetail {
+  margin-top: 28vh;
+  padding-top: 43vh;
+  height: auto;
+}
+
+#enjoin .firstfotodiv {
+  background: url(../images/enjoinc.png) no-repeat center 90%;
+  height: 75vh;
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  z-index: -2;
+  background-size: cover;
+}
+
+#enjoin .imgrow .imgdiv {
+  height: 35vh;
+  width: 23.5%;
+}
+
+#enjoin .imgandtext article {
+  width: 35%;
+}
+
+#enjoin .imgandtext .imgrow {
+  width: 60%;
+}
+
+.imgdivenjoin {
+  width: 35% !important;
+  height: 80vh !important;
+}
+
+.articleenjoin {
+  width: 60% !important;
+}
+
+#art .maindetail {
+  margin-top: 46vh;
+  padding-top: 25vh;
+  height: auto;
+}
+
+#art .firstfotodiv {
+  background: url(../images/artb.png) no-repeat center center;
+  height: 75vh;
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  z-index: -2;
+  background-size: cover;
+}
+
+#art .imgrow .imgdiv {
+  height: 42vh;
+}
+
+#etnischprofileren .maindetail {
+  margin-top: 21vh;
+  padding-top: 50vh;
+  height: auto;
+}
+
+#etnischprofileren .firstfotodiv {
+  background: url(../images/etnischprofilerenc.png) no-repeat center 40%;
+  height: 75vh;
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  z-index: -2;
+  background-size: cover;
+}
+
+.imgrowetnisch .imgdiv {
+  height: 30vh;
+  background-color: #191919;
+}
+
+.imgrowetnisch .imgdiv img {
+  object-fit: contain;
+}
+
+.videodivetnischprofileren {
+  margin-top: 5vh !important;
+  height: 70vh !important;
+}
+
+#schoenen .maindetail {
+  margin-top: 3vh;
+  padding-top: 70vh;
+  height: auto;
+}
+
+#schoenen .firstfotodiv {
+  background: url(../images/schoenenb.png) no-repeat center 70%;
+  height: 75vh;
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  z-index: -2;
+  background-size: cover;
+}
+
+.imgrowschoenen div {
+  height: 35vh !important;
+}
+
+.imgdivschoenen {
+  width: 30% !important;
+  height: 25vh !important;
+  border: 0.5em solid white !important;
+}
+
+.articleschoenen {
+  width: 25vw !important;
+}
+
+.imgandtextschoenen div:nth-of-type(1) {
+  width: 60%;
+  height: 50vh;
+}
+
+.imgandtextschoenen article {
+  width: 30%;
+}
+
+#wittewebsite .maindetail {
+  margin-top: 23vh;
+  padding-top: 50vh;
+  height: auto;
+}
+
+#wittewebsite .firstfotodiv {
+  background: url(../images/wittewebsited.png) no-repeat center 50%;
+  height: 75vh;
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  z-index: -2;
+  background-size: cover;
+}
+
+.imgrowww div {
+  height: 26vh !important;
+}
+
+.videodivww {
+  width: 60% !important;
+  height: 48vh !important;
+}
+
+.imgandtextww article {
+  width: 30% !important;
+}
+
+#extra .maindetail {
+  margin-top: 49vh;
+  padding-top: 22vh;
+  height: auto;
+}
+
+#extra .firstfotodiv {
+  background: url(../images/extrab.jpg) no-repeat center 40%;
+  height: 75vh;
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  z-index: -2;
+  background-size: cover;
+}
+
+#nemo .maindetail {
+  margin-top: 23vh;
+  padding-top: 48vh;
+  height: auto;
+}
+
+#nemo .firstfotodiv {
+  background: url(../images/nemob.png) no-repeat center 25%;
+  height: 75vh;
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  z-index: -2;
+  background-size: cover;
+}
+
+.imgrownemo div, .imgrownemo2 div {
+  height: 35vh !important;
+}
+
+.imgrownemo div img:hover {
+  transform: scale(1.15);
+}
+
+#orca .maindetail {
+  margin-top: 45vh;
+  padding-top: 26vh;
+  height: auto;
+}
+
+#orca .firstfotodiv {
+  background: url(../images/orcab.png) no-repeat center center;
+  height: 75vh;
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  z-index: -2;
+  background-size: cover;
+}
+
+.casesdiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+/* images mobile ipad */
+@media (min-width: 20em) and (max-width: 79em) {
+
+  .portfoliodiv {
+    position: absolute;
+    width: 100vw;
+  }
+
+  .kimgarrard {
+    opacity: 0;
+  }
+
+  h1 {
+    z-index: -2;
+    /* margin-left: -1.9vw !important; */
+    font-size: 13vh;
+    /* writing-mode: vertical-rl; */
+    margin: 0;
+    /* transform: scaleX(-1) scaleY(-1); */
+    letter-spacing: 0.1em;
+    font-family: "Avenir heavy", Helvetica;
+    color: #7CCEB3;
+  }
+
+  .mijnwerk article:nth-of-type(1) > div {
+    background: url(../images/dinnerb.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  .mijnwerk article:nth-of-type(2) > div {
+    background: url(../images/enjoinb.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  .mijnwerk article:nth-of-type(3) > div {
+    background: url(../images/artb.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  .mijnwerk article:nth-of-type(4) > div {
+    background: url(../images/etnischprofilerenb.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  .mijnwerk article:nth-of-type(5) > div {
+    background: url(../images/schoenenb.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  .mijnwerk article:nth-of-type(6) > div {
+    background: url(../images/wittewebsited.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  .mijnwerk article:nth-of-type(7) > div {
+    background: url(../images/extrab.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  .mijnwerk article:nth-of-type(8) > div {
+    background: url(../images/nemob.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  .mijnwerk article:nth-of-type(9) > div {
+    background: url(../images/orcab.png) no-repeat center center;
+    background-size: cover;
+  }
+}
+
+
+
+
+/* mobile */
+@media (min-width: 20em) and (max-width: 47em) {
+
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  #realcontent {
+    height: auto;
+    width: 100vw !important;
+    position: relative;
+    /* display: block; */
+  }
+
+  .logo {
+    width: 6em;
+  }
+
+  .background {
+    background-color: #7CCEB3;
+  }
+
+  .background > div {
+    width: 90vw;
+    top: 10vh;
+    left: 5vw;
+  }
+
+  .background > div div {
+    width: 100%;
+    margin-top: 1vh;
+  }
+
+  .background h2 {
+    font-size: 2em;
+  }
+
+  h1 {
+    z-index: 2;
+    position: absolute;
+    font-size: 3em;
+    text-align: center;
+    top: 109vh;
+    width: 100vw;
+    transform: rotate(0deg);
+  }
+
+  .mijnwerk {
+    overflow-x: auto;
+    padding-top: 7vh;
+  }
+
+  .mijnwerk .imgdiv {
+    border-bottom: 10em solid white;
+  }
+
+  .mijnwerk h1 {
+    top: 3vh;
+  }
+
+  .test, .kim {
+    width: 100vw;
+  }
+
+  /* .imgbox {
+    height: 90%;
+  } */
+
+  .imgbox a img {
+    display: none;
+  }
+
+  #fakecontent {
+    display: none !important;
+  }
+
+  .mijnwerk article {
+      width: 85vw;
+  }
+
+  .maindetail {
+    background-image: none;
+    background-color: white;
+    margin-top: 75vh !important;
+    padding-top: 0 !important;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .introdiv {
+    display: block;
+  }
+
+  article {
+    width: 92% !important;
+  }
+
+  .maindetail div {
+    width: 100% !important;
+  }
+
+  .imgandtext {
+    display: block !important;
+  }
+
+  .imgdiv {
+    border: 0.5em solid white;
+  }
+
+  .imgandtext article {
+    margin-top: 5vh;
+    width: 100% !important;
+  }
+
+  .imgrow {
+    display: block !important;
+  }
+
+  .introdiv {
+    margin-top: 5vh !important;
+  }
+
+  .introdiv article:nth-of-type(2) {
+    margin-top: 5vh;
+  }
+
+  .videodiv {
+    border: 0.5em solid white;
+    height: 34vh !important;
+  }
+
+  .imgrowenjoin {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+
+  .imgrowenjoin div {
+    width: 50% !important;
+  }
+
+  #enjoin .imgandtext .imgrow {
+    width: 100%;
+  }
+
+  #enjoin .imgrow .imgdiv {
+    height: 43vh;
+  }
+
+  .imgdivww {
+    height: 40vh !important;
+  }
+
+  .imgrowww div {
+    height: 29vh !important;
+  }
+
+  .videodivww {
+    height: 29vh !important;
+  }
+
+  .imgrownemo {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+
+  .imgrownemo div {
+    width: 50% !important;
+  }
+
+  .overmij {
+    width: 100vw;
+  }
+
+  .overmijp {
+    margin-bottom: 0;
+  }
+
+  .overmij p {
+    margin-top: 2vh;
+  }
+
+  .call {
+    margin-left: 0;
+  }
+
+  .imgrownemo div, .imgrownemo2 div {
+    height: 26vh !important;
+  }
+}
+
+/* mobile */
+@media (min-width: 20em) and (max-width: 47em) and (orientation: landscape) {
+  .mijnwerk > article {
+    width: 70% !important;
+    height: 80vh !important;
+  }
+
+  .mijnwerk .imgdiv {
+    border-bottom: 6em solid white !important;
+  }
+}
+
+
+
+/* tablet */
+@media (min-width: 47em) and (max-width: 79em) {
+
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  #realcontent {
+    height: auto;
+    width: 100vw !important;
+    position: relative;
+    /* display: block; */
+  }
+
+  .background {
+    background-image: -webkit-linear-gradient(350deg, #7CCEB3 70%, rgba(0, 0, 0, 0) 0%);
+  }
+
+  .background > div {
+    width: 90vw;
+    top: 10vh;
+    left: 5vw;
+  }
+
+  .background > div div {
+    width: 60%;
+    margin-top: 1vh;
+  }
+
+  h1 {
+    position: absolute;
+    font-size: 5em;
+    text-align: center;
+    top: 107vh;
+    width: 100vw;
+    transform: rotate(0deg);
+  }
+
+  .mijnwerk {
+    overflow-x: auto;
+    padding-top: 7vh;
+  }
+
+  .mijnwerk h1 {
+    top: 3vh;
+  }
+
+  .mijnwerk h2 {
+    padding-top: 3vh;
+  }
+
+  .test, .kim {
+    width: 100vw;
+  }
+
+  .imgbox a img {
+    display: none;
+  }
+
+  #fakecontent {
+    display: none !important;
+  }
+
+  .mijnwerk article {
+      width: 85vw;
+  }
+
+  .maindetail {
+    background-image: none;
+    background-color: white;
+    margin-top: 75vh !important;
+    padding-top: 0 !important;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .imgandtextfullscreen div {
+    margin-top: 4vh;
+    width: 100% !important;
+    height: 44vh !important;
+  }
+
+  .imgandtextfullscreen {
+    display: block !important;
+  }
+
+  .imgandtextfullscreen article {
+    margin-top: 5vh;
+    width: 100% !important;
+  }
+
+  .introdiv {
+    margin-top: 5vh !important;
+  }
+
+  .introdiv article:nth-of-type(2) {
+    margin-top: 5vh;
+  }
+
+  .videodiv {
+    border: 0.5em solid white;
+    height: 34vh !important;
+  }
+
+  .imgrowenjoin {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+
+  .imgrowenjoin div {
+    width: 50% !important;
+  }
+
+  /* #enjoin .imgandtext .imgrow {
+    width: 100%;
+  } */
+
+  #enjoin .imgrow .imgdiv {
+    height: 35vh;
+  }
+
+  .imgdivww {
+    height: 40vh !important;
+  }
+
+  .imgrowww div {
+    height: 13vh !important;
+  }
+
+  .videodivww {
+    height: 29vh !important;
+  }
+
+  .imgrownemo {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+
+  .imgrownemo div {
+    width: 50% !important;
+  }
+
+  #enjoin .imgandtext article {
+    width: 35% !important;
+  }
+
+  .imgdivenjoin {
+    width: 60% !important;
+    height: 67vh !important;
+  }
+
+  .imgrowetnisch {
+    display: block;
+  }
+
+  .imgrowetnisch div {
+    width: 100% !important;
+    height: 36vh !important;
+  }
+
+  .imgrowschoenen div {
+    width: 35% !important;
+    height: 18vh !important;
+  }
+
+  .articleschoenen {
+    width: 31vw !important;
+  }
+
+  .imgdivschoenen {
+    height: 12vh !important;
+  }
+
+  .imgandtextschoenen .videodiv {
+    height: 30vh !important;
+  }
+
+  .imgrowshow .imgdiv {
+    height: 20vh !important;
+  }
+
+  .mijnwerk article {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height: 60vh;
+  }
+
+  .overmij {
+    width: 100vw;
+  }
+
+
+}
+
+@media (min-width: 79em)  {
+
+  /* .background {
+    background-image: -webkit-linear-gradient(350deg, #7CCEB3 80%, rgba(0, 0, 0, 0) 0%);
+    background-color: white;
+    height: 100vh;
+    width: 55vw;
+  } */
+
+  .imgdiv img:hover {
+    transform: scale(1.1);
+  }
+
+  #realcontent {
+    position: fixed;
+    width: 500vw;
+    height: 100vh;
+    display: flex;
+  }
+
+  #fakecontent {
+    height: 340vw;
+  }
+
+  .background {
+    width: 60vw;
+  }
+
+  h1 {
+    z-index: 2;
+    margin-left: -10.5vw !important;
+    font-size: 12vh;
+    writing-mode: vertical-rl;
+    margin: 0;
+    transform: scaleX(-1) scaleY(-1) rotate(10deg);
+    letter-spacing: 0.1em;
+    font-family: "Avenir heavy", Helvetica;
+    color: #7CCEB3;
+    background-color: white;
+    padding: 5em 0em;
+  }
+
+  .mijnwerk section {
+    position: absolute;
+  }
+
+  .imgdiv {
+    overflow: hidden;
+  }
+
+  .overmij {
+    padding-left: 2.5vw;
+  }
+}
