@@ -8,3 +8,42 @@ html {
     margin: 0;
     padding: 0;
 }
+
+@font-face {
+    font-family: "Bree";
+    src: url("../fonts/BreeRegular.otf") format("opentype");
+}
+
+h1 {
+  font-size: 63px;
+  /* font-family: "Bree regular" */
+  font-family: "Bree",serif;
+}
+
+p {
+  font-size: 17px;
+  font-family: "Georgia", serif;
+  line-height: 1.8;
+}
+
+.bovenwater {
+  width: 100vw;
+  height: 80vh;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+}
+
+.bovenwater p {
+  width: 50%;
+}
+
+.onderwater {
+  position: absolute;
+  margin-top: 80vh;
+  opacity: 0.95;
+  background-color: #03C8D8;
+  width: 100vw;
+  height: 100vh;
+}
