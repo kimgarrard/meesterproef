@@ -75,6 +75,7 @@ p {
 
 .koraal {
   width: 110vw;
+  left: 10vw;
   bottom: 0;
   object-fit: contain;
   position: absolute;
