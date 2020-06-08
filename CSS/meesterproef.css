@@ -37,8 +37,8 @@ p {
 
 .bovenwater {
   width: 100vw;
-  height: 80vh;
-  background-color: beige;
+  height: 90vh;
+  background-color: #EDE6B2;
   position: fixed;
 }
 
@@ -47,16 +47,22 @@ p {
   margin: 0 20vw 2vh;
 }
 
-
+.waterrand {
+  width: 100vw;
+  height: 10vh;
+  position: absolute;
+  top: 80vh;
+}
 
 /* ONDERWATER */
 .onderwater {
   position: absolute;
-  margin-top: 80vh;
+  padding-top: 10vh;
+  margin-top: 90vh;
   background-color: #03C8D8;
   background: linear-gradient(0deg, #068CB5 30%, #03C8D8 100%);
   width: 200vw;
-  height: 100vh;
+  height: 110vh;
   display: flex;
 }
 
