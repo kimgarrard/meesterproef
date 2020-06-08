@@ -5,10 +5,16 @@
 let nemo = document.querySelector(".nemo");
 let onderwater = document.querySelector(".onderwater");
 let terug = document.querySelector(".terug");
+let aantal = document.querySelector(".aantalnummers")
 
 nemo.addEventListener('click', function() {
   onderwater.classList.remove("hidedetail");
   onderwater.classList.add("showdetail");
+
+
+  let newScore = aantal.innerHTML;
+  let value = parseInt(newScore,10) + 1;
+  aantal.innerHTML = value;
 });
 
 terug.addEventListener('click', function() {
@@ -17,10 +23,6 @@ terug.addEventListener('click', function() {
 });
 
 
-
-function myFunction() {
-    document.getElementById("welcome").textContent = "Welcome back!";
-}
 
 window.onload = function() {
     var reloading = sessionStorage.getItem("reloading");

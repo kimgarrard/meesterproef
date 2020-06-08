@@ -60,6 +60,22 @@ p {
   display: flex;
 }
 
+.aantal {
+  margin: 1em;
+  position: absolute;
+}
+
+.aantal p {
+  line-height: 1.4;
+  color: white;
+  width: 20vw;
+  margin: 0;
+}
+
+.aantal p:nth-of-type(2) {
+  font-size: 0.8em;
+}
+
 .onderwater article {
   width: 100vw;
 }
