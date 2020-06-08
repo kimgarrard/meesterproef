@@ -10,13 +10,12 @@ let aantal = document.querySelector(".aantalnummers");
 let koraalnemo = document.querySelector(".koraalnemo");
 
 koraalnemo.addEventListener("click", function() {
-  nemo.classList.remove("nemo");
-  nemodiv.classList.add("nemoswim");
-  nemodiv.classList.add("zindex");
+  nemo.classList.add("nemoswim");
+  nemo.classList.add("zindex");
 })
 
 
-nemodiv.addEventListener('click', function() {
+nemo.addEventListener('click', function() {
   onderwater.classList.remove("hidedetail");
   onderwater.classList.add("showdetail");
 
