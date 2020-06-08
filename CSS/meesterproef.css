@@ -49,7 +49,7 @@ p {
 
 .waterrand {
   width: 100vw;
-  height: 10vh;
+  height: 20vh;
   position: absolute;
   top: 80vh;
 }
@@ -57,12 +57,11 @@ p {
 /* ONDERWATER */
 .onderwater {
   position: absolute;
-  padding-top: 10vh;
-  margin-top: 90vh;
+  margin-top: 100vh;
   background-color: #03C8D8;
   background: linear-gradient(0deg, #068CB5 30%, #03C8D8 100%);
   width: 200vw;
-  height: 110vh;
+  height: 100vh;
   display: flex;
 }
 
