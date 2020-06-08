@@ -2,12 +2,21 @@
 /*eslint-env browser*/
 /*eslint 'no-console':0*/
 
+let nemodiv = document.querySelector(".nemodiv");
 let nemo = document.querySelector(".nemo");
 let onderwater = document.querySelector(".onderwater");
 let terug = document.querySelector(".terug");
-let aantal = document.querySelector(".aantalnummers")
+let aantal = document.querySelector(".aantalnummers");
+let koraalnemo = document.querySelector(".koraalnemo");
 
-nemo.addEventListener('click', function() {
+koraalnemo.addEventListener("click", function() {
+  nemo.classList.remove("nemo");
+  nemodiv.classList.add("nemoswim");
+  nemodiv.classList.add("zindex");
+})
+
+
+nemodiv.addEventListener('click', function() {
   onderwater.classList.remove("hidedetail");
   onderwater.classList.add("showdetail");
 
@@ -21,18 +30,3 @@ terug.addEventListener('click', function() {
   onderwater.classList.remove("showdetail");
   onderwater.classList.add("hidedetail");
 });
-
-
-
-window.onload = function() {
-    var reloading = sessionStorage.getItem("reloading");
-    if (reloading) {
-        sessionStorage.removeItem("reloading");
-        myFunction();
-    }
-}
-
-function reloadP() {
-    sessionStorage.setItem("reloading", "true");
-    document.location.reload();
-}
