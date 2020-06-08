@@ -129,7 +129,7 @@ p {
   }
 
   40%, 80% {
-    transform: rotate(-5deg)
+    transform: rotate(5deg)
   }
 
   100% {
@@ -141,6 +141,10 @@ p {
   position: absolute;
   margin-top: 88vh;
   margin-left: 48vw;
+}
+
+.nemo {
+  top: 3vh;
 }
 
 .nemorainbow {
@@ -161,7 +165,12 @@ p {
 
 @keyframes move {
   0% {
+    opacity: 0;
     offset-distance: 0%;
+  }
+
+  5% {
+    opacity: 1;
   }
 
   100% {
