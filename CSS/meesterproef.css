@@ -15,6 +15,18 @@ html {
     src: url("../fonts/BreeRegular.otf") format("opentype");
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-image: url(../images/grain.jpg);
+  background-size: 100%;
+  opacity: 0.2;
+  width: 100vw;
+  height: 100vh;
+  mix-blend-mode: multiply;
+}
+
 h1 {
   font-size: 3.5rem;
   font-family: "Bree";
