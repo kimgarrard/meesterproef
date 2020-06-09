@@ -121,18 +121,24 @@ p {
   width: 5vw;
   bottom: -2vh;
   left: 26vw;
+  animation: shake 15s 2s linear infinite;
+  transform-origin: bottom;
 }
 
 .koraal img:nth-of-type(3) {
   width: 8vw;
   bottom: 5vh;
   left: 35vw;
+  animation: shake 10s linear infinite;
+  transform-origin: bottom;
 }
 
 .koraal img:nth-of-type(4) {
   width: 22vw;
   bottom: -2vh;
   left: 73vw;
+  animation: shake 25s linear infinite;
+  transform-origin: bottom;
 }
 
 .koraalnemo {
