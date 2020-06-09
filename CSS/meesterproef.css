@@ -75,6 +75,7 @@ p {
   width: 200vw;
   height: 100vh;
   display: flex;
+  overflow: hidden;
 }
 
 .aantal {
@@ -103,12 +104,35 @@ p {
   transition: ease 0.2s;
 }
 
-.koraal img {
+.koraal img:nth-of-type(1) {
   width: 110vw;
   left: 10vw;
   bottom: 0;
   object-fit: contain;
   position: absolute;
+}
+
+.koraal img:not(.koraalbg) {
+  object-fit: contain;
+  position: absolute;
+}
+
+.koraal img:nth-of-type(2) {
+  width: 5vw;
+  bottom: -2vh;
+  left: 26vw;
+}
+
+.koraal img:nth-of-type(3) {
+  width: 8vw;
+  bottom: 5vh;
+  left: 35vw;
+}
+
+.koraal img:nth-of-type(4) {
+  width: 22vw;
+  bottom: -2vh;
+  left: 73vw;
 }
 
 .koraalnemo {
