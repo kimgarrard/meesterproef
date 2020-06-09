@@ -12,6 +12,10 @@ let koraalnemo = document.querySelector(".koraalnemo");
 koraalnemo.addEventListener("click", function() {
   nemo.classList.add("nemoswim");
   nemo.classList.add("zindex");
+
+  let newScore = aantal.innerHTML;
+  let value = parseInt(newScore,10) + 1;
+  aantal.innerHTML = value;
 })
 
 
@@ -19,10 +23,6 @@ nemo.addEventListener('click', function() {
   onderwater.classList.remove("hidedetail");
   onderwater.classList.add("showdetail");
 
-
-  let newScore = aantal.innerHTML;
-  let value = parseInt(newScore,10) + 1;
-  aantal.innerHTML = value;
 });
 
 terug.addEventListener('click', function() {
