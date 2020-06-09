@@ -61,9 +61,9 @@ p {
 
 .waterrand {
   width: 100vw;
-  height: 20vh;
+  height: 28vh;
   position: absolute;
-  top: 80vh;
+  top: 72vh;
 }
 
 .waves {
@@ -75,7 +75,7 @@ p {
 
 .wavesbottom {
   width: 100%;
-  height: 10vh;
+  height: 20vh;
   bottom: 0;
   background-color: #03C8D8;
 }
