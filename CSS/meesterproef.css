@@ -137,7 +137,7 @@ p {
   width: 22vw;
   bottom: -2vh;
   left: 73vw;
-  animation: shake 25s linear infinite;
+  animation: shake 30s linear infinite;
   transform-origin: bottom;
 }
 
