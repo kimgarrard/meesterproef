@@ -152,8 +152,8 @@ p {
 }
 
 .parallax > use:nth-child(7) {
-  animation-delay: -10s;
-  animation-duration: 10s;
+  animation-delay: -8s;
+  animation-duration: 9s;
 }
 
 @keyframes move-forever {
