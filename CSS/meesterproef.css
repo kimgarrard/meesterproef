@@ -10,6 +10,10 @@ html {
     overflow-x: hidden;
 }
 
+.watereffect {
+  position: absolute;
+}
+
 @font-face {
     font-family: "Bree";
     src: url("../fonts/BreeRegular.otf") format("opentype");
@@ -137,6 +141,7 @@ p {
   font-family: "Bree";
   color: rgba(255,255,255,0.2);
   text-align: center;
+  filter: url("#disFilter");
 }
 
 .aantal p {

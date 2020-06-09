@@ -11,6 +11,32 @@
 
 <body>
 
+  <!-- <svg class="watereffect">
+      <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+        <feTurbulence id="sea-filter" numOctaves="3" seed="2" baseFrequency="0.02 0.05"></feTurbulence>
+        <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+        <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s"
+        keyTimes="0;0.5;1" values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite"/>
+      </filter>
+    </svg> -->
+
+    <svg class="watereffect">
+  <defs>
+    <filter id="disFilter">
+      <feTurbulence type="turbulence" baseFrequency="0.01" numOctaves="3" seed="1" result="turbulence">
+        <animate attributeName="baseFrequency" values="0.01;0.005;0.01;" dur="30s" begin="0"
+          repeatCount="indefinite" />
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="30" xChannelSelector="R" yChannelSelector="B"
+        result="displacement" />
+    </filter>
+  </defs>
+  <g id="background">
+    <image xlink:href="https://klevron.github.io/codepen/misc/water-texture.jpg" x="0" y="0"
+      height="100%" width="100%" preserveAspectRatio="xMidYMid slice" />
+  </g>
+</svg>
+
     <div class="overlay"></div>
 
     <section class="bovenwater">
