@@ -18,6 +18,10 @@ html {
   bottom: 0;
 }
 
+.titlediv {
+  margin-top: 20vh;
+}
+
 .watereffect {
   position: absolute;
 }
@@ -101,7 +105,7 @@ p {
 
 .bovenwater p {
   text-align: center;
-  margin: 0 20vw 2vh;
+  margin: 0 30vw 2vh;
 }
 
 .waterrand {
@@ -387,7 +391,6 @@ p {
 
 .left img {
   position: absolute;
-  left: 105vw;
   width: 48vw;
 }
 
