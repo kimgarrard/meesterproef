@@ -233,12 +233,17 @@ p {
   transition: ease 0.2s;
 }
 
+.koraal img:not(.koraal4) {
+  filter: blur(3px);
+}
+
 .koraal img:nth-of-type(1) {
   width: 110vw;
   left: 10vw;
   bottom: 0;
   object-fit: contain;
   position: absolute;
+  filter: blur(3px);
 }
 
 .koraal img:not(.koraalbg) {
@@ -263,11 +268,12 @@ p {
 }
 
 .koraal img:nth-of-type(4) {
-  width: 22vw;
+  width: 23vw;
   bottom: -2vh;
   left: 73vw;
   animation: shake 30s linear infinite;
   transform-origin: bottom;
+  z-index: 4;
 }
 
 .koraalnemo {
@@ -391,10 +397,12 @@ p {
 
 .left img {
   position: absolute;
+  left: 5vw;
   width: 48vw;
 }
 
 .right {
+  z-index: 2;
   padding: 0 10vh;
 }
 
