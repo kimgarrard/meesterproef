@@ -35,7 +35,6 @@ h1 {
   font-size: 3.5rem;
   font-family: "Bree";
   text-align: center;
-  color: #df5b57;
 }
 
 h2 {
@@ -55,7 +54,7 @@ p {
 .bovenwater {
   width: 100vw;
   height: 90vh;
-  background-color: #F9F2F5;
+  background-color: #E6E9ED;
   position: fixed;
 }
 
@@ -97,10 +96,6 @@ p {
   margin: 0 20vw 2vh;
 }
 
-body {
-  background: #333;
-}
-
 .waterrand {
   width: 100vw;
   height: 28vh;
@@ -132,33 +127,33 @@ body {
 }
 
 .parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 6.5s;
+  animation-delay: -2.1s;
+  animation-duration: 6s;
 }
 
 .parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 7s;
+  animation-delay: -2.2s;
+  animation-duration: 6s;
 }
 
 .parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 7.5s;
+  animation-delay: -2.3s;
+  animation-duration: 6s;
 }
 
 .parallax > use:nth-child(5) {
-  animation-delay: -6s;
-  animation-duration: 8s;
+  animation-delay: -2.4s;
+  animation-duration: 6s;
 }
 
 .parallax > use:nth-child(6) {
-  animation-delay: -7s;
-  animation-duration: 8.5s;
+  animation-delay: -2.5s;
+  animation-duration: 6s;
 }
 
 .parallax > use:nth-child(7) {
-  animation-delay: -8s;
-  animation-duration: 9s;
+  animation-delay: -2.6s;
+  animation-duration: 6s;
 }
 
 @keyframes move-forever {
@@ -176,7 +171,7 @@ body {
   margin-top: 100vh;
   background-color: #03C8D8;
   background: linear-gradient(0deg, #068CB5 30%, #03C8D8 100%);
-  width: 100vw;
+  width: 200vw;
   height: 100vh;
   display: flex;
   overflow: hidden;
@@ -304,7 +299,7 @@ body {
 }
 
 .nemorainbow:hover {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .nemoswim {
@@ -384,7 +379,7 @@ body {
 
 .left img {
   position: absolute;
-  /* left: 105vw; */
+  left: 105vw;
   width: 48vw;
 }
 
