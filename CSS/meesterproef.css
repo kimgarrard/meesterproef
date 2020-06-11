@@ -55,7 +55,7 @@ p {
 .bovenwater {
   width: 100vw;
   height: 90vh;
-  background-color: #F7F2F4;
+  background-color: #F9F2F5;
   position: fixed;
 }
 
@@ -95,6 +95,10 @@ p {
 .bovenwater p {
   text-align: center;
   margin: 0 20vw 2vh;
+}
+
+body {
+  background: #333;
 }
 
 .waterrand {
@@ -172,7 +176,7 @@ p {
   margin-top: 100vh;
   background-color: #03C8D8;
   background: linear-gradient(0deg, #068CB5 30%, #03C8D8 100%);
-  width: 200vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   overflow: hidden;
@@ -380,7 +384,7 @@ p {
 
 .left img {
   position: absolute;
-  left: 105vw;
+  /* left: 105vw; */
   width: 48vw;
 }
 
