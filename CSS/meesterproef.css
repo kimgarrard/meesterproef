@@ -10,6 +10,14 @@ html {
     overflow-x: hidden;
 }
 
+.logo {
+  position: fixed;
+  margin: 1em;
+  width: 5vw;
+  z-index: 1;
+  bottom: 0;
+}
+
 .watereffect {
   position: absolute;
 }
@@ -21,14 +29,14 @@ html {
 
 .overlay {
   position: fixed;
+  z-index: 10;
   top: 0;
-  /* z-index: 1; */
   background-image: url(../images/grain.jpg);
-  background-size: 100%;
-  opacity: 0.2;
+  background-size: 100vw;
   width: 100vw;
   height: 100vh;
   mix-blend-mode: multiply;
+  opacity: 0.2;
 }
 
 h1 {
