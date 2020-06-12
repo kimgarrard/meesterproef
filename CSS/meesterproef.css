@@ -179,15 +179,50 @@ p {
 }
 
 /* ONDERWATER */
-/* .onderwater {
+.onderwater {
   position: absolute;
+  margin-top: 100vh;
   background-color: #03C8D8;
   background: linear-gradient(0deg, #068CB5 30%, #03C8D8 100%);
   width: 200vw;
   height: 100vh;
   display: flex;
   overflow: hidden;
+}
+
+/* .bg {
+  position: absolute;
+  background: url(../images/test.jpg) center center;
+  background-size: contain;
+  width: 150vw;
+  height: 100%;
 } */
+
+.aantal {
+  margin: 1em;
+  position: absolute;
+}
+
+.zoek {
+  position: absolute;
+  width: 100vw;
+  font-size: 2em;
+  font-family: "Bree";
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  filter: url("#disFilter");
+}
+
+.aantal p {
+  line-height: 1.4;
+  color: white;
+  width: 20vw;
+  margin: 0;
+}
+
+.aantal p:nth-of-type(2) {
+  font-size: 0.8em;
+}
 
 .onderwater article {
   width: 100vw;
@@ -199,17 +234,12 @@ p {
   transition: ease 0.2s;
 }
 
-.koraal img:not(.koraal4) {
-  filter: blur(3px);
-}
-
 .koraal img:nth-of-type(1) {
   width: 110vw;
   left: 10vw;
   bottom: 0;
   object-fit: contain;
   position: absolute;
-  filter: blur(3px);
 }
 
 .koraal img:not(.koraalbg) {
@@ -239,7 +269,6 @@ p {
   left: 73vw;
   animation: shake 30s linear infinite;
   transform-origin: bottom;
-  z-index: 4;
 }
 
 .koraalnemo {
@@ -274,6 +303,50 @@ p {
   margin-left: 47vw;
 }
 
+.nemo {
+  top: 3vh;
+}
+
+.nemorainbow {
+  opacity: 0;
+}
+
+.nemorainbow:hover {
+  opacity: 0.7;
+}
+
+.nemoswim {
+  position: absolute !important;
+  margin-top: 30vh !important;
+  margin-left: 0vw !important;
+  offset-path: path("M.5,119.54S102.44,17.82,212.33,17.82,315.6,116.9,417.54,119.54,526.1,20.47,633.34,17.82,740.58,140.68,842.52,134.07,937.85,29.71,1099.37,17.82,1271.48,152.57,1388,134.07,1538.92,15.18,1650.13,16.5,1809,135.39,1809,135.39");
+  animation: move 20s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    offset-distance: 0%;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+.showdetail {
+  margin-left: -100vw;
+  transition: ease 1s;
+}
+
+.hidedetail {
+  margin-left: 0vw;
+  transition: ease 1s;
+}
 
 
 
@@ -310,134 +383,23 @@ p {
 }
 
 .left {
-  /* background-color: #03C8D8;
-  background: linear-gradient(0deg, #068CB5 30%, #03C8D8 100%); */
+  background-color: #03C8D8;
+  background: linear-gradient(0deg, #068CB5 30%, #03C8D8 100%);
   /* border-right: 1px solid black; */
   display: flex;
   align-items: center;
 }
 
 .left img {
-  /* position: absolute; */
-  left: 5vw;
-  width: 100%;
+  position: absolute;
+  left: 105vw;
+  width: 48vw;
 }
 
 .right {
-  margin-left: 50vw;
-  z-index: 2;
   padding: 0 10vh;
 }
 
 .zindex {
   z-index: 5;
-}
-
-
-
-
-
-
-
-
-
-
-.wrapper {
-  margin-top: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 800px;
-}
-
-.onderwater {
-  background: linear-gradient(0deg, #068CB5 30%, #03C8D8 100%);
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  perspective: 8px;
-  perspective-origin: 0%;
-  display: flex;
-}
-
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateZ(0px);
-}
-
-.foreground {
-  margin-top: auto;
-  margin-bottom: 50px;
-
-  transform-origin: 0;
-  transform: translateZ(3px) scale(0.625);
-
-  /* Uncomment the code below to see the difference the scale property makes! */
-  /* transform: translateZ(3px); */
-  /* transform: translateZ(0) scale(1); */
-}
-
-
-
-
-
-
-
-
-
-
-
-/* layout */
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 800px;
-}
-
-/* Parallax Styles */
-.parallax-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  perspective: 8px;
-  perspective-origin: 0%;
-  display: flex;
-}
-
-.background {
-  position: absolute;
-  top: 40vh;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateZ(0px);
-}
-
-.foreground {
-  margin-top: 50vh;
-  margin-bottom: 140vh;
-
-  transform-origin: 0;
-  transform: translateZ(3px) scale(0.625);
-
-  /* Uncomment the code below to see the difference the scale property makes! */
-  /* transform: translateZ(3px); */
-  /* transform: translateZ(0) scale(1); */
-}
-
-.foreground > img {
-  margin-top: 50vh;
-  width: 100vw;
-  transform-origin: 0;
-  transform: translateZ(5px) scale(0.625);
-
 }
