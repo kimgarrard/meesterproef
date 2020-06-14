@@ -264,6 +264,12 @@ p {
 }
 
 .koraal img:nth-of-type(4) {
+  width: 5vw;
+  bottom: 5vh;
+  left: 47vw;
+}
+
+.koraal img:nth-of-type(5) {
   width: 22vw;
   bottom: -2vh;
   left: 73vw;
@@ -297,22 +303,16 @@ p {
   }
 }
 
-.koraalnemo, .nemodiv div {
-  position: absolute;
-  margin-top: 86vh;
-  margin-left: 47vw;
-}
-
 .nemo {
   top: 3vh;
 }
 
 .nemorainbow {
-  opacity: 0;
+  opacity: 0.8;
 }
 
 .nemorainbow:hover {
-  opacity: 0.7;
+  opacity: 0.1;
 }
 
 .nemoswim {
@@ -323,7 +323,7 @@ p {
   animation: move 20s linear infinite;
 }
 
-@keyframes move {
+/* @keyframes move {
   0% {
     opacity: 0;
     offset-distance: 0%;
@@ -336,7 +336,7 @@ p {
   100% {
     offset-distance: 100%;
   }
-}
+} */
 
 .showdetail {
   margin-left: -100vw;
@@ -359,7 +359,7 @@ p {
   background-color: white;
 }
 
-.terug {
+/* .terug {
   font-family: "bree";
   position: absolute;
   margin: 1em;
@@ -371,7 +371,7 @@ p {
   transition: ease 0.5s;
   cursor: pointer;
   z-index: 6;
-}
+} */
 
 .terug:hover {
   background-color: rgba(255,255,255,0.9);
@@ -385,7 +385,6 @@ p {
 .left {
   background-color: #03C8D8;
   background: linear-gradient(0deg, #068CB5 30%, #03C8D8 100%);
-  /* border-right: 1px solid black; */
   display: flex;
   align-items: center;
 }
