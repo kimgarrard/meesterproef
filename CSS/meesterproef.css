@@ -7,7 +7,7 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .logo {
@@ -338,8 +338,9 @@ p {
   }
 } */
 
+
 .showdetail {
-  margin-left: -100vw;
+  /* margin-left: -100vw; */
   transition: ease 1s;
 }
 
@@ -351,15 +352,20 @@ p {
 
 
 /* DETAIL */
+.detail {
+  display: flex;
+  width: 300vw;
+}
+
 .onderwaterdetail {
   display: flex;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  background-color: white;
+  margin-top: 100vh;
+  z-index: 3;
 }
 
-/* .terug {
+.terug {
   font-family: "bree";
   position: absolute;
   margin: 1em;
@@ -371,7 +377,7 @@ p {
   transition: ease 0.5s;
   cursor: pointer;
   z-index: 6;
-} */
+}
 
 .terug:hover {
   background-color: rgba(255,255,255,0.9);
@@ -383,15 +389,13 @@ p {
 }
 
 .left {
-  background-color: #03C8D8;
-  background: linear-gradient(0deg, #068CB5 30%, #03C8D8 100%);
   display: flex;
   align-items: center;
 }
 
-.left img {
-  position: absolute;
-  left: 105vw;
+.left img, .right img {
+  /* position: absolute; */
+  left: 5vw;
   width: 48vw;
 }
 
@@ -401,4 +405,80 @@ p {
 
 .zindex {
   z-index: 5;
+}
+
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  margin-top: 118vh;
+  color: white;
+  z-index: 10;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(241, 231, 218, 0.3);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+.pos1 {
+  transform: translateX(0em);
+}
+
+.pos2 {
+  transform: translateX(-100vw);
+}
+
+.pos3 {
+  transform: translateX(-200vw);
+}
+
+.position1a {
+  transform: translateX(0em);
+  animation-name: animationL1;
+  animation-duration: 1s;
+}
+
+.position2a {
+  transform: translateX(-100vw);
+  animation-name: animationL2;
+  animation-duration: 1s;
+}
+
+.position3a {
+  transform: translateX(-200vw);
+  animation-name: animationL3;
+  animation-duration: 1s;
+}
+
+.position1b {
+  transform: translateX(0em);
+  animation-name: animationR1;
+  animation-duration: 1s;
+}
+
+.position2b {
+  transform: translateX(-100vw);
+  animation-name: animationR2;
+  animation-duration: 1s;
+}
+
+.position3b {
+  transform: translateX(-200vw);
+  animation-name: animationR3;
+  animation-duration: 1s;
 }
