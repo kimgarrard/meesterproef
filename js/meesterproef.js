@@ -4,22 +4,24 @@
 
 let nemodiv = document.querySelector(".nemodiv");
 let nemo = document.querySelector(".nemo");
-let onderwater = document.querySelector(".onderwater");
+let carousel = document.querySelector(".detail");
 let terug = document.querySelector(".terug");
 let aantal = document.querySelector(".aantalnummers");
+let wijzers = document.querySelector(".wijzers");
 
 
 
 
 nemo.addEventListener('click', function() {
-  onderwater.classList.remove("hidedetail");
-  onderwater.classList.add("showdetail");
-
+  wijzers.classList.remove("hidden");
+  carousel.classList.remove("hidedetail");
+  carousel.classList.add("showdetail");
 });
 
 terug.addEventListener('click', function() {
-  onderwater.classList.remove("showdetail");
-  onderwater.classList.add("hidedetail");
+  wijzers.classList.add("hidden");
+  carousel.classList.remove("showdetail");
+  carousel.classList.add("hidedetail");
 });
 
 
@@ -115,9 +117,14 @@ function moveRight() {
     carouselDiv.classList.remove("pos6");
     carouselDiv.classList.remove("pos7");
     carouselDiv.classList.remove("pos8");
-    // article1.classList.remove("fade");
-    // article2.classList.remove("fade");
-    // article3.classList.remove("fade");
+    article1.classList.remove("fade");
+    article2.classList.remove("fade");
+    article3.classList.remove("fade");
+    article4.classList.remove("fade");
+    article5.classList.remove("fade");
+    article6.classList.remove("fade");
+    article7.classList.remove("fade");
+    article8.classList.remove("fade");
     // article1.classList.remove("fade2");
     // article2.classList.remove("fade2");
     // article3.classList.remove("fade2");
@@ -176,19 +183,19 @@ function movetoRight(){
       article3.classList.add("fade");
   } else if (currentItem == 4) {
       carouselDiv.classList.add("position4a");
-      article2.classList.add("fade");
+      article4.classList.add("fade");
   } else if (currentItem == 5) {
       carouselDiv.classList.add("position5a");
-      article3.classList.add("fade");
+      article5.classList.add("fade");
   } else if (currentItem == 6) {
       carouselDiv.classList.add("position6a");
-      article3.classList.add("fade");
+      article6.classList.add("fade");
   } else if (currentItem == 7) {
       carouselDiv.classList.add("position7a");
-      article2.classList.add("fade");
+      article7.classList.add("fade");
   } else if (currentItem == 8) {
       carouselDiv.classList.add("position8a");
-      article3.classList.add("fade");
+      article8.classList.add("fade");
   }
 }
 
@@ -196,27 +203,27 @@ function movetoLeft(){
 
   if (currentItem == 1) {
       carouselDiv.classList.add("position1b");
-      pic1.classList.add("fade");
+      article1.classList.add("fade");
   } else if (currentItem == 2) {
       carouselDiv.classList.add("position2b");
-      pic2.classList.add("fade");
+      article2.classList.add("fade");
   } else if (currentItem == 3) {
       carouselDiv.classList.add("position3b");
-      pic3.classList.add("fade");
+      article3.classList.add("fade");
   } else if (currentItem == 4) {
       carouselDiv.classList.add("position4b");
-      article2.classList.add("fade");
+      article4.classList.add("fade");
   } else if (currentItem == 5) {
       carouselDiv.classList.add("position5b");
-      article3.classList.add("fade");
+      article5.classList.add("fade");
   } else if (currentItem == 6) {
       carouselDiv.classList.add("position6b");
-      article3.classList.add("fade");
+      article6.classList.add("fade");
   } else if (currentItem == 7) {
       carouselDiv.classList.add("position7b");
-      article2.classList.add("fade");
+      article7.classList.add("fade");
   } else if (currentItem == 8) {
       carouselDiv.classList.add("position8b");
-      article3.classList.add("fade");
+      article8.classList.add("fade");
   }
 }

@@ -328,12 +328,13 @@ p {
 
 
 .showdetail {
-  /* margin-left: -100vw; */
+  z-index: 2 !important;
+  opacity: 1 !important;
   transition: ease 1s;
 }
 
 .hidedetail {
-  margin-left: 0vw;
+  opacity: 0;
   transition: ease 1s;
 }
 
@@ -341,6 +342,8 @@ p {
 
 /* DETAIL */
 .detail {
+  opacity: 0;
+  z-index: -1;
   display: flex;
   width: 800vw;
 }
@@ -687,4 +690,18 @@ p {
   100% {
     transform: translateX(-700vw);
   }
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.hidden {
+  display: none;
 }
