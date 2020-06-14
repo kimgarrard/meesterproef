@@ -45,6 +45,11 @@ var body = document.querySelector("body");
 var article1 = document.querySelector(".vis1");
 var article2 = document.querySelector(".vis2");
 var article3 = document.querySelector(".vis3");
+var article4 = document.querySelector(".vis4");
+var article5 = document.querySelector(".vis5");
+var article6 = document.querySelector(".vis6");
+var article7 = document.querySelector(".vis7");
+var article8 = document.querySelector(".vis8");
 
 // var dot1 = document.querySelector(".dot:nth-of-type(1)");
 // var dot2 = document.querySelector(".dot:nth-of-type(2)");

@@ -7,7 +7,7 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 .logo {
@@ -465,6 +465,36 @@ p {
   animation-duration: 1s;
 }
 
+@keyframes animationL1 {
+  0% {
+    transform: translateX(-200vw);
+  }
+
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes animationL2 {
+  0% {
+    transform: translateX(0vw)
+  }
+
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes animationL3 {
+  0% {
+    transform: translateX(-100vw)
+  }
+
+  100% {
+    transform: translateX(-200vw);
+  }
+}
+
 .position1b {
   transform: translateX(0em);
   animation-name: animationR1;
@@ -481,4 +511,34 @@ p {
   transform: translateX(-200vw);
   animation-name: animationR3;
   animation-duration: 1s;
+}
+
+@keyframes animationR1 {
+  0% {
+    transform: translateX(-100vw)
+  }
+
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes animationR2 {
+  0% {
+    transform: translateX(-200vw)
+  }
+
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes animationR3 {
+  0% {
+    transform: translateX(0vw)
+  }
+
+  100% {
+    transform: translateX(-200vw);
+  }
 }
