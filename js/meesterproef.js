@@ -73,7 +73,7 @@ function getKeyAndMove(e){
 
 function moveRight() {
     currentItem += 1;
-    if (currentItem > 3) {
+    if (currentItem > 8) {
       currentItem = 1;
     }
     move();
@@ -82,7 +82,7 @@ function moveRight() {
   function moveLeft() {
     currentItem -= 1;
     if (currentItem < 1) {
-      currentItem = 3;
+      currentItem = 8;
     }
     prevButton.classList.remove("buttonActive");
     move();
@@ -94,18 +94,34 @@ function moveRight() {
     carouselDiv.classList.remove("position1a");
     carouselDiv.classList.remove("position2a");
     carouselDiv.classList.remove("position3a");
+    carouselDiv.classList.remove("position4a");
+    carouselDiv.classList.remove("position5a");
+    carouselDiv.classList.remove("position6a");
+    carouselDiv.classList.remove("position7a");
+    carouselDiv.classList.remove("position8a");
     carouselDiv.classList.remove("position1b");
     carouselDiv.classList.remove("position2b");
     carouselDiv.classList.remove("position3b");
+    carouselDiv.classList.remove("position4b");
+    carouselDiv.classList.remove("position5b");
+    carouselDiv.classList.remove("position6b");
+    carouselDiv.classList.remove("position7b");
+    carouselDiv.classList.remove("position8b");
     carouselDiv.classList.remove("pos1");
     carouselDiv.classList.remove("pos2");
     carouselDiv.classList.remove("pos3");
-    article1.classList.remove("fade");
-    article2.classList.remove("fade");
-    article3.classList.remove("fade");
-    article1.classList.remove("fade2");
-    article2.classList.remove("fade2");
-    article3.classList.remove("fade2");
+    carouselDiv.classList.remove("pos4");
+    carouselDiv.classList.remove("pos5");
+    carouselDiv.classList.remove("pos6");
+    carouselDiv.classList.remove("pos7");
+    carouselDiv.classList.remove("pos8");
+    // article1.classList.remove("fade");
+    // article2.classList.remove("fade");
+    // article3.classList.remove("fade");
+    // article1.classList.remove("fade2");
+    // article2.classList.remove("fade2");
+    // article3.classList.remove("fade2");
+
     // dot1.classList.remove("current");
     // dot2.classList.remove("current");
     // dot3.classList.remove("current");
@@ -123,6 +139,26 @@ function moveRight() {
         carouselDiv.classList.add("pos3");
         article3.classList.add("fade2");
         // dot3.classList.add("current")
+    } else if (currentItem == 4) {
+        carouselDiv.classList.add("pos4");
+        article2.classList.add("fade2");
+        // dot2.classList.add("current")
+    } else if (currentItem == 5) {
+        carouselDiv.classList.add("pos5");
+        article3.classList.add("fade2");
+        // dot3.classList.add("current")
+    } else if (currentItem == 6) {
+        carouselDiv.classList.add("pos6");
+        article3.classList.add("fade2");
+        // dot3.classList.add("current")
+    } else if (currentItem == 7) {
+        carouselDiv.classList.add("pos7");
+        article2.classList.add("fade2");
+        // dot2.classList.add("current")
+    } else if (currentItem == 8) {
+        carouselDiv.classList.add("pos8");
+        article3.classList.add("fade2");
+        // dot3.classList.add("current")
     }
   };
 
@@ -138,6 +174,21 @@ function movetoRight(){
   } else if (currentItem == 3) {
       carouselDiv.classList.add("position3a");
       article3.classList.add("fade");
+  } else if (currentItem == 4) {
+      carouselDiv.classList.add("position4a");
+      article2.classList.add("fade");
+  } else if (currentItem == 5) {
+      carouselDiv.classList.add("position5a");
+      article3.classList.add("fade");
+  } else if (currentItem == 6) {
+      carouselDiv.classList.add("position6a");
+      article3.classList.add("fade");
+  } else if (currentItem == 7) {
+      carouselDiv.classList.add("position7a");
+      article2.classList.add("fade");
+  } else if (currentItem == 8) {
+      carouselDiv.classList.add("position8a");
+      article3.classList.add("fade");
   }
 }
 
@@ -152,5 +203,20 @@ function movetoLeft(){
   } else if (currentItem == 3) {
       carouselDiv.classList.add("position3b");
       pic3.classList.add("fade");
+  } else if (currentItem == 4) {
+      carouselDiv.classList.add("position4b");
+      article2.classList.add("fade");
+  } else if (currentItem == 5) {
+      carouselDiv.classList.add("position5b");
+      article3.classList.add("fade");
+  } else if (currentItem == 6) {
+      carouselDiv.classList.add("position6b");
+      article3.classList.add("fade");
+  } else if (currentItem == 7) {
+      carouselDiv.classList.add("position7b");
+      article2.classList.add("fade");
+  } else if (currentItem == 8) {
+      carouselDiv.classList.add("position8b");
+      article3.classList.add("fade");
   }
 }
