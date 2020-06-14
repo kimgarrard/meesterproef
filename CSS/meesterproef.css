@@ -220,12 +220,6 @@ p {
   width: 100vw;
 }
 
-.onderwater1 div img {
-  position: absolute;
-  width: 5vw;
-  transition: ease 0.2s;
-}
-
 .koraal {
   transition: ease 1s;
 }
@@ -295,15 +289,18 @@ p {
   }
 }
 
-.nemo {
-  top: 3vh;
+
+.onderwater1 div img {
+  position: absolute;
+  width: 5vw;
+  transition: ease 0.2s;
 }
 
-.nemorainbow {
+.onderwater1 div img:nth-of-type(2) {
   opacity: 0.8;
 }
 
-.nemorainbow:hover {
+.onderwater1 div img:nth-of-type(2):hover {
   opacity: 0.1;
 }
 
