@@ -4,42 +4,12 @@
 
 let nemodiv = document.querySelector(".nemodiv");
 let nemo = document.querySelector(".nemo");
+let test = document.querySelector(".grondelvis");
 let carousel = document.querySelector(".detail");
 let terug = document.querySelector(".terug");
 let aantal = document.querySelector(".aantalnummers");
 let wijzers = document.querySelector(".wijzers");
 let koraal = document.querySelector(".koraal");
-
-
-
-
-nemo.addEventListener('click', function() {
-  koraal.classList.add("blur");
-  wijzers.classList.remove("hidden");
-  carousel.classList.remove("hidedetail");
-  carousel.classList.add("showdetail");
-});
-
-terug.addEventListener('click', function() {
-  koraal.classList.remove("blur");
-  wijzers.classList.add("hidden");
-  carousel.classList.remove("showdetail");
-  carousel.classList.add("hidedetail");
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 var currentItem = 1;
 var carouselDiv = document.querySelector(".detail");
@@ -55,6 +25,31 @@ var article5 = document.querySelector(".vis5");
 var article6 = document.querySelector(".vis6");
 var article7 = document.querySelector(".vis7");
 var article8 = document.querySelector(".vis8");
+
+
+
+nemo.addEventListener('click', function() {
+  koraal.classList.add("blur");
+  wijzers.classList.remove("hidden");
+  carousel.classList.remove("hidedetail");
+  carousel.classList.add("showdetail");
+});
+
+test.addEventListener('click', function() {
+  console.log("currentItem");
+  currentItem == 3;
+  koraal.classList.add("blur");
+  wijzers.classList.remove("hidden");
+  carousel.classList.remove("hidedetail");
+  carousel.classList.add("showdetail");
+});
+
+terug.addEventListener('click', function() {
+  koraal.classList.remove("blur");
+  wijzers.classList.add("hidden");
+  carousel.classList.remove("showdetail");
+  carousel.classList.add("hidedetail");
+});
 
 // var dot1 = document.querySelector(".dot:nth-of-type(1)");
 // var dot2 = document.querySelector(".dot:nth-of-type(2)");
