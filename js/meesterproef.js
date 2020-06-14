@@ -8,17 +8,20 @@ let carousel = document.querySelector(".detail");
 let terug = document.querySelector(".terug");
 let aantal = document.querySelector(".aantalnummers");
 let wijzers = document.querySelector(".wijzers");
+let koraal = document.querySelector(".koraal");
 
 
 
 
 nemo.addEventListener('click', function() {
+  koraal.classList.add("blur");
   wijzers.classList.remove("hidden");
   carousel.classList.remove("hidedetail");
   carousel.classList.add("showdetail");
 });
 
 terug.addEventListener('click', function() {
+  koraal.classList.remove("blur");
   wijzers.classList.add("hidden");
   carousel.classList.remove("showdetail");
   carousel.classList.add("hidedetail");
