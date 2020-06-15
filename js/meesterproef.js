@@ -21,6 +21,15 @@ let vis6 = document.querySelector(".vissen div:nth-of-type(6)");
 let vis7 = document.querySelector(".vissen div:nth-of-type(7)");
 let vis8 = document.querySelector(".vissen div:nth-of-type(8)");
 
+var dot1 = document.querySelector(".dot:nth-of-type(1)");
+var dot2 = document.querySelector(".dot:nth-of-type(2)");
+var dot3 = document.querySelector(".dot:nth-of-type(3)");
+var dot4 = document.querySelector(".dot:nth-of-type(4)");
+var dot5 = document.querySelector(".dot:nth-of-type(5)");
+var dot6 = document.querySelector(".dot:nth-of-type(6)");
+var dot7 = document.querySelector(".dot:nth-of-type(7)");
+var dot8 = document.querySelector(".dot:nth-of-type(8)");
+
 var currentItem = 1;
 var carouselDiv = document.querySelector(".detail");
 
@@ -46,61 +55,79 @@ vissen.addEventListener('click', function() {
   carousel.classList.add("showdetail");
 });
 
-vis1.addEventListener('click', function() {
+dot1.onclick = show1;
+dot2.onclick = show2;
+dot3.onclick = show3;
+dot4.onclick = show4;
+dot5.onclick = show5;
+dot6.onclick = show6;
+dot7.onclick = show7;
+dot8.onclick = show8;
+
+vis1.onclick = show1;
+vis2.onclick = show2;
+vis3.onclick = show3;
+vis4.onclick = show4;
+vis5.onclick = show5;
+vis6.onclick = show6;
+vis7.onclick = show7;
+vis8.onclick = show8;
+
+function show1() {
   currentItem = 1;
   if (currentItem == 1) {
     move();
   }
-});
+};
 
-vis2.addEventListener('click', function() {
+function show2() {
   currentItem = 2;
   if (currentItem == 2) {
     move();
   }
-});
+};
 
-vis3.addEventListener('click', function() {
+function show3() {
   currentItem = 3;
   if (currentItem == 3) {
     move();
   }
-});
+};
 
-vis4.addEventListener('click', function() {
+function show4() {
   currentItem = 4;
   if (currentItem == 4) {
     move();
   }
-});
+};
 
-vis5.addEventListener('click', function() {
+function show5() {
   currentItem = 5;
   if (currentItem == 5) {
     move();
   }
-});
+};
 
-vis6.addEventListener('click', function() {
+function show6() {
   currentItem = 6;
   if (currentItem == 6) {
     move();
   }
-});
+};
 
-vis7.addEventListener('click', function() {
+function show7() {
   currentItem = 7;
   if (currentItem == 7) {
     move();
   }
-});
+};
 
-vis8.addEventListener('click', function() {
+function show8() {
   currentItem = 8;
   if (currentItem == 8) {
     move();
   }
-});
+};
 
 
 terug.addEventListener('click', function() {
@@ -110,15 +137,6 @@ terug.addEventListener('click', function() {
   carousel.classList.remove("showdetail");
   carousel.classList.add("hidedetail");
 });
-
-var dot1 = document.querySelector(".dot:nth-of-type(1)");
-var dot2 = document.querySelector(".dot:nth-of-type(2)");
-var dot3 = document.querySelector(".dot:nth-of-type(3)");
-var dot4 = document.querySelector(".dot:nth-of-type(4)");
-var dot5 = document.querySelector(".dot:nth-of-type(5)");
-var dot6 = document.querySelector(".dot:nth-of-type(6)");
-var dot7 = document.querySelector(".dot:nth-of-type(7)");
-var dot8 = document.querySelector(".dot:nth-of-type(8)");
 
 body.onkeydown = getKeyAndMove;
 nextButton.onclick = moveRight;
@@ -202,35 +220,35 @@ function moveRight() {
     if (currentItem == 1) {
         carouselDiv.classList.add("pos1");
         article1.classList.add("fade");
-        // dot1.classList.add("current")
+        dot1.classList.add("current");
     } else if (currentItem == 2) {
         carouselDiv.classList.add("pos2");
         article2.classList.add("fade");
-        // dot2.classList.add("current")
+        dot2.classList.add("current");
     } else if (currentItem == 3) {
         carouselDiv.classList.add("pos3");
         article3.classList.add("fade");
-        // dot3.classList.add("current")
+        dot3.classList.add("current");
     } else if (currentItem == 4) {
         carouselDiv.classList.add("pos4");
         article2.classList.add("fade");
-        // dot2.classList.add("current")
+        dot4.classList.add("current");
     } else if (currentItem == 5) {
         carouselDiv.classList.add("pos5");
         article3.classList.add("fade");
-        // dot3.classList.add("current")
+        dot5.classList.add("current");
     } else if (currentItem == 6) {
         carouselDiv.classList.add("pos6");
         article3.classList.add("fade");
-        // dot3.classList.add("current")
+        dot6.classList.add("current");
     } else if (currentItem == 7) {
         carouselDiv.classList.add("pos7");
         article2.classList.add("fade");
-        // dot2.classList.add("current")
+        dot7.classList.add("current");
     } else if (currentItem == 8) {
         carouselDiv.classList.add("pos8");
         article3.classList.add("fade");
-        // dot3.classList.add("current")
+        dot8.classList.add("current");
     }
   };
 

@@ -503,6 +503,39 @@ p {
   left: 0;
 }
 
+.dots {
+  text-align: center;
+  position: absolute;
+  width: 100vw;
+  justify-content: center;
+  display: flex;
+  bottom: 4vh;
+  z-index: 5;
+}
+
+.dot {
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin: 0 0.3em;
+  /* background-color: #aaa296; */
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+  transform: scale(1.2);
+  transition: transform 0.6s ease;
+}
+
+.current {
+  background-color: lightblue;
+  transform: scale(1.2);
+}
+
 .pos1 {
   transform: translateX(0em);
 }
