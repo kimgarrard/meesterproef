@@ -227,9 +227,9 @@ p {
 }
 
 .koraal img:nth-of-type(1) {
-  width: 110vw;
-  left: 10vw;
-  bottom: 0;
+  width: 100vw;
+  left: 24vw;
+  bottom: -11vh;
   object-fit: contain;
   position: absolute;
 }
@@ -446,7 +446,7 @@ p {
 
 .vissen div:nth-of-type(6) {
   left: 5vw;
-  top: 40vh;
+  top: 45vh;
   animation: swim5 9s infinite linear;
   z-index: 1;
 }
@@ -456,7 +456,7 @@ p {
 
 @keyframes swim5 {
   0% {
-    transform: translate(-28vw, -30vh) rotate(40deg);
+    transform: translate(-28vw, -50vh) rotate(40deg);
   }
 
   45%{
