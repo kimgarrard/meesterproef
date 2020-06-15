@@ -53,6 +53,7 @@ vissen.addEventListener('click', function() {
   wijzers.classList.remove("hidden");
   carousel.classList.remove("hidedetail");
   carousel.classList.add("showdetail");
+  carousel.classList.add("zindex");
 });
 
 dot1.onclick = show1;
@@ -136,6 +137,7 @@ terug.addEventListener('click', function() {
   wijzers.classList.add("hidden");
   carousel.classList.remove("showdetail");
   carousel.classList.add("hidedetail");
+  carousel.classList.remove("zindex");
 });
 
 body.onkeydown = getKeyAndMove;
