@@ -49,7 +49,7 @@ var article8 = document.querySelector(".vis8");
 
 vissen.addEventListener('click', function() {
   koraal.classList.add("blur");
-  vissen.classList.add("blur");
+  vissen.classList.add("blur2");
   wijzers.classList.remove("hidden");
   carousel.classList.remove("hidedetail");
   carousel.classList.add("showdetail");
@@ -132,7 +132,7 @@ function show8() {
 
 terug.addEventListener('click', function() {
   koraal.classList.remove("blur");
-  vissen.classList.remove("blur");
+  vissen.classList.remove("blur2");
   wijzers.classList.add("hidden");
   carousel.classList.remove("showdetail");
   carousel.classList.add("hidedetail");
