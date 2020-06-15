@@ -396,7 +396,7 @@ p {
 
 /* DETAIL */
 .detail {
-  transition: ease 1s;
+  /* transition: ease 1s; */
   display: flex;
   width: 800vw;
 }
@@ -479,14 +479,28 @@ p {
 .pos1 {
   transform: translateX(0em);
 }
-
 .pos2 {
   transform: translateX(-100vw);
 }
-
 .pos3 {
   transform: translateX(-200vw);
 }
+.pos4 {
+  transform: translateX(-300vw);
+}
+.pos5 {
+  transform: translateX(-400vw);
+}
+.pos6 {
+  transform: translateX(-500vw);
+}
+.pos7 {
+  transform: translateX(-600vw);
+}
+.pos8 {
+  transform: translateX(-700vw);
+}
+
 
 .position1a {
   transform: translateX(0em);
