@@ -351,11 +351,27 @@ p {
 }
 
 .vissen div:nth-of-type(2) {
-  bottom: 20vh;
+  animation: swim2 12s infinite linear;
+  bottom: 15vh;
   left: 70vw;
 }
 .vissen div:nth-of-type(2) img {
   width: 4.5vw;
+}
+
+@keyframes swim2 {
+
+  0% {
+    transform: translate(-5vw, 20vh) rotate(-50deg);
+  }
+
+  50% {
+    transform: translate(0, 5vh) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(8vw, 20vh) rotate(50deg);
+  }
 }
 
 .vissen div:nth-of-type(3) {
