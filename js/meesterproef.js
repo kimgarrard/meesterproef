@@ -12,6 +12,15 @@ let wijzers = document.querySelector(".wijzers");
 let koraal = document.querySelector(".koraal");
 let vissen = document.querySelector(".vissen");
 
+let vis1 = document.querySelector(".vissen div:nth-of-type(1)");
+let vis2 = document.querySelector(".vissen div:nth-of-type(2)");
+let vis3 = document.querySelector(".vissen div:nth-of-type(3)");
+let vis4 = document.querySelector(".vissen div:nth-of-type(4)");
+let vis5 = document.querySelector(".vissen div:nth-of-type(5)");
+let vis6 = document.querySelector(".vissen div:nth-of-type(6)");
+let vis7 = document.querySelector(".vissen div:nth-of-type(7)");
+let vis8 = document.querySelector(".vissen div:nth-of-type(8)");
+
 var currentItem = 1;
 var carouselDiv = document.querySelector(".detail");
 
@@ -29,7 +38,7 @@ var article8 = document.querySelector(".vis8");
 
 
 
-nemo.addEventListener('click', function() {
+vissen.addEventListener('click', function() {
   koraal.classList.add("blur");
   vissen.classList.add("blur");
   wijzers.classList.remove("hidden");
@@ -37,15 +46,58 @@ nemo.addEventListener('click', function() {
   carousel.classList.add("showdetail");
 });
 
-test.addEventListener('click', function() {
-  currentItem = 3;
-  koraal.classList.add("blur");
-  vissen.classList.add("blur");
-  wijzers.classList.remove("hidden");
-  carousel.classList.remove("hidedetail");
-  carousel.classList.add("showdetail");
+vis1.addEventListener('click', function() {
+  currentItem = 1;
+  if (currentItem == 1) {
+    move();
+  }
+});
 
+vis2.addEventListener('click', function() {
+  currentItem = 2;
+  if (currentItem == 2) {
+    move();
+  }
+});
+
+vis3.addEventListener('click', function() {
+  currentItem = 3;
   if (currentItem == 3) {
+    move();
+  }
+});
+
+vis4.addEventListener('click', function() {
+  currentItem = 4;
+  if (currentItem == 4) {
+    move();
+  }
+});
+
+vis5.addEventListener('click', function() {
+  currentItem = 5;
+  if (currentItem == 5) {
+    move();
+  }
+});
+
+vis6.addEventListener('click', function() {
+  currentItem = 6;
+  if (currentItem == 6) {
+    move();
+  }
+});
+
+vis7.addEventListener('click', function() {
+  currentItem = 7;
+  if (currentItem == 7) {
+    move();
+  }
+});
+
+vis8.addEventListener('click', function() {
+  currentItem = 8;
+  if (currentItem == 8) {
     move();
   }
 });
