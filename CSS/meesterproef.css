@@ -515,10 +515,9 @@ p {
 
 .dot {
   cursor: pointer;
-  height: 18px;
-  width: 18px;
+  height: 19px;
+  width: 19px;
   margin: 0 0.3em;
-  /* background-color: #aaa296; */
   border: 1px solid white;
   border-radius: 50%;
   display: inline-block;
