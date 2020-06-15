@@ -372,18 +372,24 @@ p {
   bottom: 40vh;
 }
 .vissen div:nth-of-type(6) img {
-  width: 20vw;
+  width: 22vw;
 }
 
 .vissen div:nth-of-type(7) {
   left: 50vw;
   bottom: 30vh;
 }
+.vissen div:nth-of-type(7) img {
+  width: 10vw;
+}
 
 .vissen div:nth-of-type(8) {
   bottom: 5vh;
   left: 33vw;
   transform: rotate(10deg);
+}
+.vissen div:nth-of-type(8) img {
+  width: 4vw;
 }
 
 
