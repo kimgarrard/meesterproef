@@ -314,26 +314,37 @@ p {
 }
 
 .vissen div:nth-of-type(1) {
-  bottom: 30vh;
-  margin-left: 0vw !important;
-  offset-path: path("M.5,119.54S102.44,17.82,212.33,17.82,315.6,116.9,417.54,119.54,526.1,20.47,633.34,17.82,740.58,140.68,842.52,134.07,937.85,29.71,1099.37,17.82,1271.48,152.57,1388,134.07,1538.92,15.18,1650.13,16.5,1809,135.39,1809,135.39");
-  animation: move 40s linear infinite;
+  bottom: 15vh;
+  left: 30vw;
+  animation: swim1 10s infinite linear;
+  z-index: 1;
 }
 
-/* @keyframes move {
-  0% {
-    opacity: 0;
-    offset-distance: 0%;
+@keyframes swim1 {
+  25% {
+    transform: translate(2.5vw, 0) rotate(-20deg);
   }
 
-  5% {
-    opacity: 1;
+  49% {
+    transform: translate(5vw, -2vh);
+  }
+
+  50% {
+    transform: translate(10vw, -2vh) scaleX(-1);
+  }
+
+  75% {
+    transform: translate(7.5vw, 0) rotate(-20deg) scaleX(-1);
+  }
+
+  95% {
+    transform: scaleX(-1) translate(-5vw, 0);
   }
 
   100% {
-    offset-distance: 100%;
+    transform: scaleX(1) translate(0vw, 0);
   }
-} */
+}
 
 .vissen div:nth-of-type(1) img {
   width: 4vw;

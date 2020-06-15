@@ -167,7 +167,6 @@ function moveRight() {
     if (currentItem < 1) {
       currentItem = 8;
     }
-    prevButton.classList.remove("buttonActive");
     move();
     movetoLeft()
   }
@@ -215,7 +214,6 @@ function moveRight() {
     dot6.classList.remove("current");
     dot7.classList.remove("current");
     dot8.classList.remove("current");
-    prevButton.classList.remove("buttonActive");
 
     if (currentItem == 1) {
         carouselDiv.classList.add("pos1");
