@@ -221,6 +221,7 @@ p {
 }
 
 .koraal {
+  filter: blur(0.3px);
   transition: ease 1s;
 }
 
@@ -309,6 +310,7 @@ p {
 
 .vissen div img:nth-of-type(2):hover {
   opacity: 0;
+  cursor: pointer;
 }
 
 .vissen div:nth-of-type(1) {
@@ -369,7 +371,7 @@ p {
 
 .vissen div:nth-of-type(6) {
   left: 5vw;
-  bottom: 40vh;
+  top: 40vh;
 }
 .vissen div:nth-of-type(6) img {
   width: 22vw;
@@ -378,6 +380,7 @@ p {
 .vissen div:nth-of-type(7) {
   left: 50vw;
   bottom: 30vh;
+  transform: rotate(10deg);
 }
 .vissen div:nth-of-type(7) img {
   width: 10vw;
@@ -453,7 +456,7 @@ p {
 
 .left, .right {
   width: 50vw;
-  padding: 2em;
+  padding: 2em 5em;
 }
 
 .left img, .right img {
@@ -487,6 +490,7 @@ p {
 }
 
 .prev:hover, .next:hover {
+  cursor: pointer;
   background-color: rgba(241, 231, 218, 0.3);
 }
 
@@ -797,5 +801,6 @@ p {
 }
 
 .blur {
+  opacity: 0.8;
   filter: blur(5px);
 }

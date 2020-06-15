@@ -103,21 +103,6 @@ vis8.addEventListener('click', function() {
 });
 
 
-
-// test.addEventListener('click', function() {
-//   // body.classList.add("test");
-//   // currentItem = 3;
-//   koraal.classList.add("blur");
-//   wijzers.classList.remove("hidden");
-//   carousel.classList.remove("hidedetail");
-//   carousel.classList.add("showdetail");
-//
-//   // if (currentItem == 3) {
-//   //   move();
-//   // }
-//   console.log("currentItem", currentItem);
-// });
-
 terug.addEventListener('click', function() {
   koraal.classList.remove("blur");
   vissen.classList.remove("blur");
@@ -126,9 +111,14 @@ terug.addEventListener('click', function() {
   carousel.classList.add("hidedetail");
 });
 
-// var dot1 = document.querySelector(".dot:nth-of-type(1)");
-// var dot2 = document.querySelector(".dot:nth-of-type(2)");
-// var dot3 = document.querySelector(".dot:nth-of-type(3)");
+var dot1 = document.querySelector(".dot:nth-of-type(1)");
+var dot2 = document.querySelector(".dot:nth-of-type(2)");
+var dot3 = document.querySelector(".dot:nth-of-type(3)");
+var dot4 = document.querySelector(".dot:nth-of-type(4)");
+var dot5 = document.querySelector(".dot:nth-of-type(5)");
+var dot6 = document.querySelector(".dot:nth-of-type(6)");
+var dot7 = document.querySelector(".dot:nth-of-type(7)");
+var dot8 = document.querySelector(".dot:nth-of-type(8)");
 
 body.onkeydown = getKeyAndMove;
 nextButton.onclick = moveRight;
@@ -198,46 +188,48 @@ function moveRight() {
     article6.classList.remove("fade");
     article7.classList.remove("fade");
     article8.classList.remove("fade");
-    // article1.classList.remove("fade2");
-    // article2.classList.remove("fade2");
-    // article3.classList.remove("fade2");
 
-    // dot1.classList.remove("current");
-    // dot2.classList.remove("current");
-    // dot3.classList.remove("current");
+    dot1.classList.remove("current");
+    dot2.classList.remove("current");
+    dot3.classList.remove("current");
+    dot4.classList.remove("current");
+    dot5.classList.remove("current");
+    dot6.classList.remove("current");
+    dot7.classList.remove("current");
+    dot8.classList.remove("current");
     prevButton.classList.remove("buttonActive");
 
     if (currentItem == 1) {
         carouselDiv.classList.add("pos1");
-        article1.classList.add("fade2");
+        article1.classList.add("fade");
         // dot1.classList.add("current")
     } else if (currentItem == 2) {
         carouselDiv.classList.add("pos2");
-        article2.classList.add("fade2");
+        article2.classList.add("fade");
         // dot2.classList.add("current")
     } else if (currentItem == 3) {
         carouselDiv.classList.add("pos3");
-        article3.classList.add("fade2");
+        article3.classList.add("fade");
         // dot3.classList.add("current")
     } else if (currentItem == 4) {
         carouselDiv.classList.add("pos4");
-        article2.classList.add("fade2");
+        article2.classList.add("fade");
         // dot2.classList.add("current")
     } else if (currentItem == 5) {
         carouselDiv.classList.add("pos5");
-        article3.classList.add("fade2");
+        article3.classList.add("fade");
         // dot3.classList.add("current")
     } else if (currentItem == 6) {
         carouselDiv.classList.add("pos6");
-        article3.classList.add("fade2");
+        article3.classList.add("fade");
         // dot3.classList.add("current")
     } else if (currentItem == 7) {
         carouselDiv.classList.add("pos7");
-        article2.classList.add("fade2");
+        article2.classList.add("fade");
         // dot2.classList.add("current")
     } else if (currentItem == 8) {
         carouselDiv.classList.add("pos8");
-        article3.classList.add("fade2");
+        article3.classList.add("fade");
         // dot3.classList.add("current")
     }
   };
