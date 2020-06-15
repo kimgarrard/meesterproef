@@ -312,21 +312,13 @@ p {
 }
 
 .vissen div:nth-of-type(1) {
-  margin-top: 30vh !important;
+  bottom: 30vh;
   margin-left: 0vw !important;
   offset-path: path("M.5,119.54S102.44,17.82,212.33,17.82,315.6,116.9,417.54,119.54,526.1,20.47,633.34,17.82,740.58,140.68,842.52,134.07,937.85,29.71,1099.37,17.82,1271.48,152.57,1388,134.07,1538.92,15.18,1650.13,16.5,1809,135.39,1809,135.39");
-  animation: move 20s linear infinite;
+  animation: move 40s linear infinite;
 }
 
-.nemoswim {
-  position: absolute !important;
-  margin-top: 30vh !important;
-  margin-left: 0vw !important;
-  offset-path: path("M.5,119.54S102.44,17.82,212.33,17.82,315.6,116.9,417.54,119.54,526.1,20.47,633.34,17.82,740.58,140.68,842.52,134.07,937.85,29.71,1099.37,17.82,1271.48,152.57,1388,134.07,1538.92,15.18,1650.13,16.5,1809,135.39,1809,135.39");
-  animation: move 20s linear infinite;
-}
-
-/* @keyframes move {
+@keyframes move {
   0% {
     opacity: 0;
     offset-distance: 0%;
@@ -339,34 +331,44 @@ p {
   100% {
     offset-distance: 100%;
   }
-} */
+}
 
 .vissen div:nth-of-type(2) {
-  margin-top: 5vh !important;
+  bottom: 20vh;
+  left: 70vw;
 }
 
 .vissen div:nth-of-type(3) {
-  margin-top: 10vh !important;
+  bottom: 10vh;
+  left: 40vw;
 }
 
 .vissen div:nth-of-type(4) {
-  margin-top: 15vh !important;
+  bottom: 25vh;
+  right: 10vw;
 }
 
 .vissen div:nth-of-type(5) {
-  margin-top: 20vh !important;
+  bottom: 10vh;
+  left: 55vw;
+  transform: rotate(-10deg);
 }
 
 .vissen div:nth-of-type(6) {
-  margin-left: 10vh !important;
+  left: 5vw;
+  bottom: 40vh;
+  /* transform: rotate(40deg); */
 }
 
 .vissen div:nth-of-type(7) {
-  margin-left: 15vh !important;
+  left: 50vw;
+  bottom: 30vh;
 }
 
 .vissen div:nth-of-type(8) {
-  margin-left: 20vh !important;
+  bottom: 5vh;
+  left: 33vw;
+  transform: rotate(10deg);
 }
 
 
