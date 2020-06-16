@@ -33,7 +33,7 @@ html {
 
 .overlay {
   position: fixed;
-  z-index: 10;
+  z-index: 1;
   top: 0;
   background-image: url(../images/grain.jpg);
   background-size: 100vw;
@@ -48,6 +48,7 @@ h1 {
   font-family: "Bree";
   text-align: center;
   color: #df5b57;
+  /* color: white; */
 }
 
 h2 {
@@ -62,12 +63,18 @@ p {
   font-size: 17px;
   font-family: "Georgia", serif;
   line-height: 1.8;
+  color: rgba(0,0,0,0.8);
 }
 
 .bovenwater {
   width: 100vw;
   height: 90vh;
-  background-color: #E6E9ED;
+  background: rgb(197,155,188);
+  background: linear-gradient(0deg, rgba(197,155,188,1) 0%, rgba(97,132,189,1) 60%, rgba(65,72,105,1) 100%);
+  background: rgb(246,204,182);
+  background: linear-gradient(0deg, rgba(246,204,182,1) 0%, rgba(137,206,189,1) 50%, rgba(16,161,192,1) 100%);
+  background: grey;
+  background: linear-gradient(0deg, #F9B7BE 0%, rgba(132,210,212,0.8) 50%, rgba(15,155,190,0.8) 90%, rgba(10,131,180,0.8) 100%);
   position: fixed;
 }
 
@@ -190,30 +197,10 @@ p {
   overflow: hidden;
 }
 
-.aantal {
-  margin: 1em;
+.onderwater > p {
   position: absolute;
-}
-
-.zoek {
-  position: absolute;
-  width: 100vw;
-  font-size: 2em;
-  font-family: "Bree";
-  color: rgba(255,255,255,0.5);
-  text-align: center;
-  filter: url("#disFilter");
-}
-
-.aantal p {
-  line-height: 1.4;
-  color: white;
-  width: 20vw;
-  margin: 0;
-}
-
-.aantal p:nth-of-type(2) {
-  font-size: 0.8em;
+  width: 40vw;
+  color: rgba(0,0,0,0.8);
 }
 
 .onderwater article {
