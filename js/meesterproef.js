@@ -13,7 +13,7 @@ let koraal = document.querySelector(".koraal");
 let vissen = document.querySelector(".vissen");
 
 let title = document.querySelector(".intro2 h2");
-let titlep = document.querySelector(".intro2 section");
+let titlep = document.querySelector(".intro2 div");
 let ontdek = document.querySelector(".ontdek");
 
 let vis1 = document.querySelector(".vissen div:nth-of-type(1)");

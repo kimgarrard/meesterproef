@@ -274,6 +274,7 @@ p {
   width: 60vw;
   height: 60vh;
   overflow: auto;
+  transition: 1s ease;
 }
 
 .intro2 section {
@@ -282,7 +283,6 @@ p {
   background: linear-gradient(0deg, rgba(23,59,88,1) 0%, rgba(36,97,119,1) 30%, rgba(5,161,194,1) 60%, rgba(3,200,216,1) 100%); */
   /* background: linear-gradient(0deg, rgba(23,59,88,1) 0%, rgba(42,132,154,1) 30%, rgba(5,161,194,1) 60%, rgba(3,200,216,1) 100%); */
   overflow: auto;
-  transition: 1s ease;
 }
 
 .intro2 div h2:nth-of-type(1) {
