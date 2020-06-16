@@ -256,12 +256,11 @@ p {
 .onderwater {
   position: absolute;
   margin-top: 100vh;
-  /* background-color: #03C8D8;
-  background: linear-gradient(0deg, rgba(36,82,119,1) 0%, rgba(5,161,194,1) 40%, rgba(3,200,216,1) 100%); */
   width: 100vw;
   height: 100vh;
   display: flex;
   overflow: hidden;
+  background: linear-gradient(0deg, rgba(23,59,88,1) 0%, rgba(42,132,154,1) 30%, rgba(5,161,194,1) 60%, rgba(3,200,216,1) 100%);
 }
 
 .intro2 {
@@ -272,27 +271,47 @@ p {
 }
 
 .intro2 div {
-  padding-left: 3vw;
-  background-color: #03C8D8;
-  background: linear-gradient(0deg, rgba(36,82,119,1) 0%, rgba(5,161,194,1) 40%, rgba(3,200,216,1) 100%);
-  background: linear-gradient(0deg, rgba(23,59,88,1) 0%, rgba(36,97,119,1) 30%, rgba(5,161,194,1) 60%, rgba(3,200,216,1) 100%);
-  background: linear-gradient(0deg, rgba(23,59,88,1) 0%, rgba(42,132,154,1) 30%, rgba(5,161,194,1) 60%, rgba(3,200,216,1) 100%);
-  height: 150vh;
+  width: 60vw;
+  height: 60vh;
   overflow: auto;
 }
 
+.intro2 section {
+  padding-left: 3vw;
+  /* background: linear-gradient(0deg, rgba(36,82,119,1) 0%, rgba(5,161,194,1) 40%, rgba(3,200,216,1) 100%);
+  background: linear-gradient(0deg, rgba(23,59,88,1) 0%, rgba(36,97,119,1) 30%, rgba(5,161,194,1) 60%, rgba(3,200,216,1) 100%); */
+  /* background: linear-gradient(0deg, rgba(23,59,88,1) 0%, rgba(42,132,154,1) 30%, rgba(5,161,194,1) 60%, rgba(3,200,216,1) 100%); */
+  overflow: auto;
+  transition: 1s ease;
+}
+
 .intro2 div h2:nth-of-type(1) {
-  top: -5vh;
   font-size: 3.5rem;
   color: #df5b57;
   transition: 1s ease;
-  /* filter: url("#disFilter"); */
+  margin-top: 1em;
+  margin-bottom: 0em;
+}
+
+.intro2 div h2:nth-of-type(2) {
+  margin-top: 3em;
 }
 
 .intro2 div p {
   margin-left: 3vw;
-  width: 50vw;
+  width: 40vw;
   transition: 1s ease;
+  margin-top: 5vh;
+}
+
+.intro2 div p:nth-of-type(1) {
+  margin-left: 0;
+  font-size: 1.5em;
+  margin-top: 0vh;
+}
+
+.intro2 div p:nth-of-type(3) {
+  margin-top: 0vh;
 }
 
 blockquote {
@@ -300,7 +319,7 @@ blockquote {
   display: inline-block;
   font-size: 1.5em;
   line-height: normal;
-  width: 10%;
+  width: 20%;
   float: left;
   padding: 10px 0;
   margin-top: 10px;
@@ -313,6 +332,23 @@ blockquote {
   color: #e5e4e4;
   word-wrap: break-word;
   border-top: 4px solid #e5e4e4;
+}
+
+blockquote:nth-of-type(2) {
+  width: 30%;
+}
+
+.intro2 div::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.intro2 div::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+}
+
+.intro2 div::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.3);
+  /* outline: 1px solid slategrey; */
 }
 
 .onderwater article {
@@ -545,7 +581,7 @@ blockquote {
 
 .vissen div:nth-of-type(6) {
   left: 5vw;
-  top: 45vh;
+  top: 50vh;
   animation: swim5 9s infinite linear;
   z-index: 1;
 }
@@ -555,11 +591,11 @@ blockquote {
 
 @keyframes swim5 {
   0% {
-    transform: translate(-28vw, -50vh) rotate(40deg);
+    transform: translate(-28vw, -20vh) rotate(20deg);
   }
 
   45%{
-    transform: translate(5vw, 0vh) rotate(20deg) scale(0.8);
+    transform: translate(5vw, 10vh) rotate(10deg) scale(0.8);
   }
 
   95%, 100% {
