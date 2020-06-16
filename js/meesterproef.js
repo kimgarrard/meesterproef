@@ -12,6 +12,9 @@ let wijzers = document.querySelector(".wijzers");
 let koraal = document.querySelector(".koraal");
 let vissen = document.querySelector(".vissen");
 
+let sidenotesp = document.querySelector(".sidenotes > p");
+let sidenotesdiv = document.querySelector(".sidenotes div");
+
 let vis1 = document.querySelector(".vissen div:nth-of-type(1)");
 let vis2 = document.querySelector(".vissen div:nth-of-type(2)");
 let vis3 = document.querySelector(".vissen div:nth-of-type(3)");
@@ -54,6 +57,10 @@ vissen.addEventListener('click', function() {
   carousel.classList.remove("hidedetail");
   carousel.classList.add("showdetail");
   carousel.classList.add("zindex");
+});
+
+sidenotesp.addEventListener('click', function() {
+  sidenotesdiv.classList.toggle("hidden");
 });
 
 dot1.onclick = show1;

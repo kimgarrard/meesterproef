@@ -557,7 +557,7 @@ p {
   right: 3vw;
   color: white;
   line-height: 1;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   z-index: 3;
 }
 
@@ -591,10 +591,10 @@ p {
   padding: 0.8em 2.5em;
   background-color: rgba(255,255,255,0.3);
   color: rgba(0,0,0,0.6);
-  right: 1em;
+  right: 1.5em;
   opacity: 1;
   width: 40vw;
-  top: 5vh;
+  top: 3em;
 }
 
 
@@ -1019,6 +1019,7 @@ p {
 }
 
 .hidden {
+  transform: 0.5s ease;
   display: none;
 }
 
