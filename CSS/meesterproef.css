@@ -75,6 +75,8 @@ p {
   background: linear-gradient(0deg, rgba(246,204,182,1) 0%, rgba(137,206,189,1) 50%, rgba(16,161,192,1) 100%);
   background: grey;
   background: linear-gradient(0deg, #F9B7BE 0%, rgba(132,210,212,0.8) 50%, rgba(15,155,190,0.8) 90%, rgba(10,131,180,0.8) 100%);
+  background: rgb(251,200,179);
+background: linear-gradient(0deg, rgba(251,200,179,1) 0%, rgba(132,210,212,1) 50%, rgba(3,200,216,1) 90%, rgba(1,180,207,1) 100%);
   position: fixed;
 }
 
