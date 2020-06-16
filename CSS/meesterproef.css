@@ -231,6 +231,7 @@ p {
   width: 100vw;
   left: 3vw;
   color: rgba(255,255,255,0.3);
+  transition: 0.5s ease;
   /* filter: url("#disFilter"); */
 }
 
@@ -549,6 +550,10 @@ p {
   z-index: -1;
   opacity: 0;
   transition: ease 1s;
+}
+
+.sidenotes {
+  transition: 0.5s ease;
 }
 
 .sidenotes > p {

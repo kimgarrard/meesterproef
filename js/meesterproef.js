@@ -12,6 +12,8 @@ let wijzers = document.querySelector(".wijzers");
 let koraal = document.querySelector(".koraal");
 let vissen = document.querySelector(".vissen");
 
+let title = document.querySelector(".onderwater > h2");
+let sidenotes = document.querySelector(".sidenotes");
 let sidenotesp = document.querySelector(".sidenotes > p");
 let sidenotesdiv = document.querySelector(".sidenotes div");
 
@@ -53,10 +55,23 @@ var article8 = document.querySelector(".vis8");
 vissen.addEventListener('click', function() {
   koraal.classList.add("blur");
   vissen.classList.add("blur2");
+  sidenotes.classList.add("blur2");
+  title.classList.add("blur2");
   wijzers.classList.remove("hidden");
   carousel.classList.remove("hidedetail");
   carousel.classList.add("showdetail");
   carousel.classList.add("zindex");
+});
+
+terug.addEventListener('click', function() {
+  koraal.classList.remove("blur");
+  vissen.classList.remove("blur2");
+  sidenotes.classList.remove("blur2");
+  title.classList.remove("blur2");
+  wijzers.classList.add("hidden");
+  carousel.classList.remove("showdetail");
+  carousel.classList.add("hidedetail");
+  carousel.classList.remove("zindex");
 });
 
 sidenotesp.addEventListener('click', function() {
@@ -136,16 +151,6 @@ function show8() {
     move();
   }
 };
-
-
-terug.addEventListener('click', function() {
-  koraal.classList.remove("blur");
-  vissen.classList.remove("blur2");
-  wijzers.classList.add("hidden");
-  carousel.classList.remove("showdetail");
-  carousel.classList.add("hidedetail");
-  carousel.classList.remove("zindex");
-});
 
 body.onkeydown = getKeyAndMove;
 nextButton.onclick = moveRight;
