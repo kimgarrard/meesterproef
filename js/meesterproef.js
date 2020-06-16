@@ -12,10 +12,12 @@ let wijzers = document.querySelector(".wijzers");
 let koraal = document.querySelector(".koraal");
 let vissen = document.querySelector(".vissen");
 
-let title = document.querySelector(".intro2");
+let title = document.querySelector(".intro2 h2");
+let titlep = document.querySelector(".intro2 p");
 let sidenotes = document.querySelector(".sidenotes");
 let sidenotesp = document.querySelector(".sidenotes > p");
 let sidenotesdiv = document.querySelector(".sidenotes div");
+let ontdek = document.querySelector(".ontdek");
 
 let vis1 = document.querySelector(".vissen div:nth-of-type(1)");
 let vis2 = document.querySelector(".vissen div:nth-of-type(2)");
@@ -50,13 +52,17 @@ var article6 = document.querySelector(".vis6");
 var article7 = document.querySelector(".vis7");
 var article8 = document.querySelector(".vis8");
 
-
+ontdek.addEventListener('click', function() {
+  var onderwater = document.querySelector(".onderwater");
+  onderwater.scrollIntoView({behavior: "smooth"});
+});
 
 vissen.addEventListener('click', function() {
   koraal.classList.add("blur");
   vissen.classList.add("blur2");
   sidenotes.classList.add("blur2");
   title.classList.add("blur2");
+  titlep.classList.add("blur2");
   wijzers.classList.remove("hidden");
   carousel.classList.remove("hidedetail");
   carousel.classList.add("showdetail");
@@ -68,6 +74,7 @@ terug.addEventListener('click', function() {
   vissen.classList.remove("blur2");
   sidenotes.classList.remove("blur2");
   title.classList.remove("blur2");
+  titlep.classList.remove("blur2");
   wijzers.classList.add("hidden");
   carousel.classList.remove("showdetail");
   carousel.classList.add("hidedetail");
