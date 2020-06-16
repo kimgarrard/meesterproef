@@ -41,8 +41,13 @@ html {
 
 .titlediv p:nth-of-type(2) {
   transform: rotate(-90deg);
-  font-size: 2em;
+  font-size: 1.5em;
   animation: float 2.5s infinite;
+  border: 1px solid black;
+  border-radius: 100%;
+  margin: 0;
+  width: 3vw;
+  margin-left: 48.5vw;
 }
 
 @keyframes float {
@@ -270,7 +275,7 @@ p {
   top: -5vh;
   font-size: 3.5rem;
   color: #df5b57;
-  transition: 0.5s ease;
+  transition: 1s ease;
   /* filter: url("#disFilter"); */
 }
 
@@ -285,6 +290,7 @@ p {
 
 .intro2 div p {
   width: 50vw;
+  transition: 1s ease;
 }
 
 .onderwater article {
