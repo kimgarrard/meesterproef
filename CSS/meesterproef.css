@@ -224,10 +224,14 @@ p {
   overflow: hidden;
 }
 
-.onderwater > p {
+.onderwater > h2 {
+  top: -5vh;
+  font-size: 3.5rem;
   position: absolute;
-  width: 40vw;
-  color: rgba(0,0,0,0.8);
+  width: 100vw;
+  left: 3vw;
+  color: rgba(255,255,255,0.3);
+  /* filter: url("#disFilter"); */
 }
 
 .onderwater article {
