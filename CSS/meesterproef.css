@@ -78,6 +78,33 @@ p {
   position: fixed;
 }
 
+.bovenwater > img {
+  position: absolute;
+  width: 100vw;
+  top: -20vh;
+  animation: clouds 40s linear infinite;
+  filter: blur(2px);
+  opacity: 0.15;
+  z-index: -1;
+}
+
+@keyframes clouds  {
+0% {
+  opacity: 0.1;
+  transform: translateX(0) scale(1.1);
+}
+
+50% {
+  opacity: 0.2;
+  transform: translateX(10%) scale(1.2);
+}
+
+100% {
+  opacity: 0.1;
+  transform: translateX(0) scale(1.1);
+}
+}
+
 .rainbow {
   z-index: -2;
   opacity: 1;
