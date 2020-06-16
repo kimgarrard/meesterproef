@@ -12,7 +12,7 @@ let wijzers = document.querySelector(".wijzers");
 let koraal = document.querySelector(".koraal");
 let vissen = document.querySelector(".vissen");
 
-let title = document.querySelector(".onderwater > h2");
+let title = document.querySelector(".intro2");
 let sidenotes = document.querySelector(".sidenotes");
 let sidenotesp = document.querySelector(".sidenotes > p");
 let sidenotesdiv = document.querySelector(".sidenotes div");
