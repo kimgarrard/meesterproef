@@ -14,9 +14,6 @@ let vissen = document.querySelector(".vissen");
 
 let title = document.querySelector(".intro2 h2");
 let titlep = document.querySelector(".intro2 p");
-let sidenotes = document.querySelector(".sidenotes");
-let sidenotesp = document.querySelector(".sidenotes > p");
-let sidenotesdiv = document.querySelector(".sidenotes div");
 let ontdek = document.querySelector(".ontdek");
 
 let vis1 = document.querySelector(".vissen div:nth-of-type(1)");
@@ -60,7 +57,6 @@ ontdek.addEventListener('click', function() {
 vissen.addEventListener('click', function() {
   koraal.classList.add("blur");
   vissen.classList.add("blur2");
-  sidenotes.classList.add("blur2");
   title.classList.add("blur2");
   titlep.classList.add("blur2");
   wijzers.classList.remove("hidden");
@@ -72,17 +68,12 @@ vissen.addEventListener('click', function() {
 terug.addEventListener('click', function() {
   koraal.classList.remove("blur");
   vissen.classList.remove("blur2");
-  sidenotes.classList.remove("blur2");
   title.classList.remove("blur2");
   titlep.classList.remove("blur2");
   wijzers.classList.add("hidden");
   carousel.classList.remove("showdetail");
   carousel.classList.add("hidedetail");
   carousel.classList.remove("zindex");
-});
-
-sidenotesp.addEventListener('click', function() {
-  sidenotesdiv.classList.toggle("hidden");
 });
 
 dot1.onclick = show1;
