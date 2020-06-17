@@ -334,13 +334,13 @@ blockquote {
   line-height: 1.45;
   color: rgba(0,0,0,0.8);
   color: #e5e4e4;
-  color: #173b58;
+  /* color: #173b58;
   color: rgba(23,59,88,0.8);
   color: rgba(255,255,255,0.6);
-  word-wrap: break-word;
+  word-wrap: break-word; */
   border-top: 4px solid #e5e4e4;
-  border-top: 4px solid rgba(23,59,88,0.8);
-  border-top: 4px solid rgba(255,255,255,0.6);
+  /* border-top: 4px solid rgba(23,59,88,0.8);
+  border-top: 4px solid rgba(255,255,255,0.6); */
 }
 
 .blockquote {
