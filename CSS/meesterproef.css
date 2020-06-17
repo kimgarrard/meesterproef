@@ -10,6 +10,16 @@ html {
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: "Bree";
+    src: url("../fonts/BreeRegular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "BreeLight";
+    src: url("../fonts/BreeLight.otf") format("opentype");
+}
+
 .logo {
   position: fixed;
   margin: 1em;
@@ -87,11 +97,6 @@ html {
   position: absolute;
 }
 
-@font-face {
-    font-family: "Bree";
-    src: url("../fonts/BreeRegular.otf") format("opentype");
-}
-
 .overlay {
   position: fixed;
   z-index: 1;
@@ -116,7 +121,7 @@ h2 {
   margin-top: 1.5em;
   margin-bottom: .75em;
   font-family: "Bree";
-  font-size: 1.8em;
+  font-size: 2.2em;
   color: #df5b57;
 }
 
@@ -352,7 +357,7 @@ blockquote {
   margin-right: 30px;
   margin-bottom: 0;
   margin-left: 0;
-  font-family: "bree";
+  font-family: "BreeLight";
   line-height: 1.45;
   color: rgba(0,0,0,0.8);
   color: #e5e4e4;
