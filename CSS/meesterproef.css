@@ -19,14 +19,32 @@ html {
 }
 
 .titlediv {
+  position: absolute;
+  width: 100vw;
+  text-align: center;
   margin-top: 20vh;
+}
+
+/* .ontdek {
+  position: relative;
+  z-index: 2;
+} */
+
+.ontdek p:hover {
+  color: white;
 }
 
 .titlediv p:nth-of-type(1) {
   margin-top: 3em !important;
+  z-index: 10;
   font-size: 1.5em;
   line-height: normal;
   animation: float1 2.5s infinite;
+  transition: 0.2s ease;
+
+  font-size: 1.5em;
+  color: white;
+  font-family: "Bree";
 }
 
 @keyframes float1 {
@@ -40,15 +58,26 @@ html {
 }
 
 .titlediv p:nth-of-type(2) {
+  position: relative;
+  z-index: 2;
   transform: rotate(-90deg);
   font-size: 1.5em;
   animation: float 2.5s infinite;
-  border: 1px solid black;
+  border: 2px solid #df5b57;
+  background-color: rgba(255,255,255,0.5);
   border-radius: 100%;
   margin: 0;
   width: 3vw;
   margin-left: 48.5vw;
   margin-top: 2em;
+  color: #df5b57;
+  transition: ease 0.3s;
+}
+
+.titlediv p:nth-of-type(2):hover {
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.9);
+  transition: ease 0.3s;
 }
 
 @keyframes float {
@@ -83,7 +112,7 @@ html {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 4em;
   font-family: "Bree";
   text-align: center;
   color: #df5b57;
@@ -717,14 +746,14 @@ blockquote {
   border: 2px solid #df5b57;
   border-radius: 0.2em;
   background-color: rgba(255,255,255,0.5);
-  transition: ease 0.5s;
+  transition: ease 0.3s;
   cursor: pointer;
   z-index: 6;
 }
 
 .terug:hover {
   background-color: rgba(255,255,255,0.9);
-  transition: ease 0.5s;
+  transition: ease 0.3s;
 }
 
 .left, .right {
@@ -783,7 +812,7 @@ blockquote {
   justify-content: center;
   display: flex;
   bottom: 4vh;
-  z-index: 5;
+  z-index: 10;
 }
 
 .dot {
