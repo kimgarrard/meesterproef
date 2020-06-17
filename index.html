@@ -13,18 +13,7 @@
 
   <img src="images/correspondentlogo.png" alt="" class="logo">
 
-    <svg class="watereffect">
-  <defs>
-    <filter id="disFilter">
-      <feTurbulence type="turbulence" baseFrequency="0.01" numOctaves="3" seed="1" result="turbulence">
-        <animate attributeName="baseFrequency" values="0.01;0.005;0.01;" dur="30s" begin="0"
-          repeatCount="indefinite" />
-      </feTurbulence>
-      <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="30" xChannelSelector="R" yChannelSelector="B"
-        result="displacement" />
-    </filter>
-  </defs>
-</svg>
+  <div class="overlay"></div>
 
 
     <section class="bovenwater">
@@ -41,8 +30,6 @@
       </div>
     </div>
 
-
-    <div class="overlay"></div>
 
     <div class="waterrand">
       <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
