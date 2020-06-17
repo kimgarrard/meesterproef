@@ -14,7 +14,7 @@ let vissen = document.querySelector(".vissen");
 
 let title = document.querySelector(".intro2 h2");
 let titlep = document.querySelector(".intro2 div");
-let ontdek = document.querySelector(".ontdek p:nth-of-type(2)");
+let ontdek = document.querySelector(".ontdek");
 
 let vis1 = document.querySelector(".vissen div:nth-of-type(1)");
 let vis2 = document.querySelector(".vissen div:nth-of-type(2)");
