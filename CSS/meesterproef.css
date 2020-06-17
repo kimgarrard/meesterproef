@@ -308,7 +308,7 @@ p {
 .intro2 div p:nth-of-type(1) {
   margin-left: 0;
   font-size: 1.7em;
-  margin-top: 0vh;
+  margin-top: 1vh;
   margin-bottom: 10vh;
   color: white;
   font-family: "Bree";
