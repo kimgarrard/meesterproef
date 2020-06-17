@@ -22,27 +22,20 @@ html {
   position: absolute;
   width: 100vw;
   text-align: center;
-  margin-top: 20vh;
+  margin-top: 18vh;
 }
-
-/* .ontdek {
-  position: relative;
-  z-index: 2;
-} */
 
 .ontdek p:hover {
   color: white;
 }
 
 .titlediv p:nth-of-type(1) {
-  margin-top: 3em !important;
+  margin-top: 4em !important;
   z-index: 10;
   font-size: 1.5em;
   line-height: normal;
   animation: float1 2.5s infinite;
   transition: 0.2s ease;
-
-  font-size: 1.5em;
   color: white;
   font-family: "Bree";
 }
@@ -69,7 +62,7 @@ html {
   margin: 0;
   width: 3vw;
   margin-left: 48.5vw;
-  margin-top: 2em;
+  margin-top: 1em;
   color: #df5b57;
   transition: ease 0.3s;
 }
