@@ -1150,3 +1150,19 @@ blockquote {
   opacity: 0;
   filter: blur(5px);
 }
+
+
+
+
+
+
+
+@media (max-width: 100em)  {
+  .left {
+    width: 40vw;
+  }
+
+  .right {
+    width: 60vw;
+  }
+}
